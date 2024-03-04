@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Kantumruy Pro", sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+*::selection{
+    background:#1890ff ;
+    color:white ;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color:white;
+    height: 2000px;
+}
+header{
+    width: 100%;
+    background-color:#014282;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: .2s;
+    padding: 0 70px;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+header .navbar ul li{
+    margin:0 1rem ;
+}
+header .navbar ul li a{
+    font-size: 1.6rem;
+    color: white;
+}
+header .navbar ul li .active{
+    border-bottom: 2px solid #ff7c00;
+}
+header .navbar ul li a:hover{
+    border-bottom: 2px solid #ff7c00;
+}
+header .navbar ul li img{
+    width: 40px;
+    height: 30px;
+}
+header .navbar ul li a button{
+    font-size: 1.5rem;
+    color: #014282;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+header .navbar ul li a button:hover{
+    background-color: #ff7c00;
+    color: white;
+}
+header .logo {
+    color: rgb(243, 153, 168);
+    padding:0 2rem ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: rgb(242, 150, 165);
+    cursor: pointer;
+    display: none;
+    transition: 2s;
+}
+header .logo img{
+    width:100% ;
+    height: 80px; 
+    
+}
+.about-title{
+    background: #014282;
+    width: 100%;
+    height: 270px;
+    position: relative;
+    top: 85px;
+    display: flex;
+    justify-content: center;
+}
+.about-title .container{
+    background-image: url("https://domain.gov.kh/static/media/about-bg.a738281f4cb10599ef97.png");
+    width:100%;
+    height: 270px;
+    background-size: 100% 100%;
+    /* background-color: #1890ff; */
+    /* background-size: contain; */
+    transform:scalex(0.73); 
+    position: relative;
+    left: 10px;
+}
+.about-title .about-title{
+    align-items: flex-start;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* height: 420px; */
+    justify-content: center;
+    position: relative;
+    right: 200px;
+}
+.about-title .container .title{
+    width: 30%;
+    height: 100%;
+    /* background-color: #ff7c00; */
+    
+}
+.about-title .container .title h1{
+   
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+.about-title .container .title p{
+    font-family: "Kantumruy Pro", sans-serif;
+    line-height: 20.8px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    width: 308px;
+}
+.box{
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.box .box1{
+    width: 75%;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.box .box1 .box-left{
+    width: 48%;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 20px;
+   position: relative;
+   top: 150px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px 0px;
+}
+.box .box1 .box-left h2{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: 600;
+   
+}
+.box .box1 .box-left h2,p{
+    padding: 10px 25px;
+}
+.box .box1 .box-left p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+}
+.box .box1 .box-right{
+    width: 48%;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+   top: 150px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px 0px;
+}
+.box .box1 .box-right h2{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.box .box1 .box-right h2,p{
+    padding: 10px 25px;
+}
+.box .box1 .box-right p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+}
+.box .box1 .box-left svg{
+    margin-top: 20px;
+    position: relative;
+    left: 25px;
+}
+.box .box1 .box-right svg{
+    margin-top: 20px;
+    position: relative;
+    left: 25px;
+}
+.box2{
+    width:100% ;
+    height: 60vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.box2 .box2-one{
+    width:75% ;
+    height: 55vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.box2 .box2-one .left{
+    width: 25%;
+    height: 55vh ;
+    background-color: #fff;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+    flex: 0 0 auto;
+    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+.box2 .box2-one .left h2{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    padding: 0 20px;
+}
+.box2 .box2-one .right hr{
+    width: 90%;
+    margin-top: 10px;
+}
+.box2 .box2-one .right h3{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.box2 .box2-one .right p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    line-height: 19.5px;
+    font-weight: 500;
+    position: relative;
+    right: 25px;
+    width: 100%;
+}  
+ .ender{
+    width: 100%;
+    height: 160vh;
+    background-color: rgb(242, 248, 252);
+}
+.ender .oo{
+    width: 75%;
+    height: 35vh;
+    background-color:rgb(242, 248, 252);
+    margin: 0 auto;
+}
+.ender .oo h2{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: 600;
+    padding:40px 0px;
+}
+.ender .oo p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    right: 25px;
+    line-height: 19.5px;
+    font-weight: 500;
+    position: relative;
+    top: -30px;
+}
+
+.ender .aa{
+    width: 75%;
+    height: 50vh;
+    background-color:rgb(242, 248, 252);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -20px;
+}
+.ender .aa .bb{
+    margin-top: 10px;
+    width: 48.5%;
+    height:35vh ;
+    background-color: #8d6c4d;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ender .aa .bb-left {
+    width: 45%;
+    height: 100%;
+}
+.ender .aa .bb-left img {
+    width: 100%;
+    height: 100%;
+}
+.ender .aa .bb-right{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+    
+}
+.ender .aa .bb-right h2{
+    color: rgb(1, 66, 130);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.ender .aa .bb-right p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    right: 5px;
+    line-height: 19.5px;
+}
+.ender .aa .bb-right button{
+    background-color: rgb(255, 124, 0);
+    border: none;
+    border-radius: 10px;
+    width:120px ;
+    height: 36px;
+   
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+.ender .aa .bb-right button a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.ender .aa .bb-right button:hover {
+    background-color: #014282;
+}
+.ender .cc{
+    width: 75%;
+    height: 50vh;
+    background-color:rgb(242, 248, 252);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -80px;
+}
+.ender .cc .bb{
+    margin-top: 10px;
+    width: 48.5%;
+    height:35vh ;
+    background-color: #8d6c4d;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ender .cc .bb-left {
+    width: 45%;
+    height: 100%;
+}
+.ender .cc .bb-left img {
+    width: 100%;
+    height: 100%;
+}
+.ender .cc .bb-right{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+    
+}
+.ender .cc .bb-right h2{
+    color: rgb(1, 66, 130);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.ender .cc .bb-right p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    right: 5px;
+    line-height: 19.5px;
+}
+.ender .cc .bb-right button{
+    background-color: rgb(255, 124, 0);
+    border: none;
+    border-radius: 10px;
+    width:120px ;
+    height: 36px;
+   
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+.ender .cc .bb-right button a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.ender .cc .bb-right button:hover {
+    background-color: #014282;
+}
+.ender .dd{
+    width: 75%;
+    height: 40vh;
+    background-color:rgb(242, 248, 252);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -140px;
+}
+.ender .dd .bb{
+    margin-top: 10px;
+    width: 48.5%;
+    height:35vh ;
+    background-color: #8d6c4d;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ender .dd .bb-left {
+    width: 45%;
+    height: 100%;
+}
+.ender .dd .bb-left img {
+    width: 100%;
+    height: 100%;
+}
+.ender .dd .bb-right{
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+    
+}
+.ender .dd .bb-right h2{
+    color: rgb(1, 66, 130);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.ender .dd .bb-right p{
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    right: 5px;
+    line-height: 19.5px;
+}
+.ender .dd .bb-right button{
+    background-color: rgb(255, 124, 0);
+    border: none;
+    border-radius: 10px;
+    width:120px ;
+    height: 36px;
+   
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+.ender .dd .bb-right button a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.ender .dd .bb-right button:hover {
+    background-color: #014282;
+}
+.pp{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color:rgb(1, 66, 130);
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-container{
+    width: 75%;
+    height: 50vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .logo{
+    width: 100%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    /* padding: 20px; */
+}
+.footer .footer-container .logo svg{
+    width: 97px;
+    height: 97px;
+    margin-top: 20px;
+}
+.footer .footer-container .logo img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+}
+.footer .footer-container .flex-row{
+    width: 100%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-container .flex-row .flex-row-left{
+    width: 50%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .flex-row .flex-row-left i{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 5px;
+}
+.footer .footer-container .flex-row .flex-row-left a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+}
+.footer .footer-container .flex-row .flex-row-left a:hover{
+    border-bottom: 2px solid #ff7c00;
+    
+}
+.footer .footer-container .flex-row .flex-row-center{
+    width: 25%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .flex-row .flex-row-center a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer .footer-container .flex-row .flex-row-center a:hover{
+    border-bottom: 2px solid #ff7c00;
+}
+.footer .footer-container .flex-row .flex-row-right{
+    width: 25%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    position: relative;
+    left: 30px;
+}
+.footer .footer-container .flex-row .flex-row-right a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer .footer-container .flex-row .flex-row-right i{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 7px;
+    transition: 0.5s;
+    position: relative;
+    right: 10px;
+    
+}
+.footer .footer-container .flex-row .flex-row-right i:hover{
+    color: #ff7c00;
+    cursor: pointer;
+    
+}
+.two{
+    width: 100%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+    display: flex;
+    justify-content: center;
+}
+.two .two-one{
+    width: 75%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+    display: flex;
+    justify-content: space-between;
+}
+.two .two-one .qq{
+    width: 65%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .qq p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 19px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+}
+.two .two-one .ww{
+    width: 15%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .ww p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 19px;
+    font-weight: 500;
+    position: relative;
+    left: 25px;
+}
+.two .two-one .ee{
+    width: 20%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .ee img{
+    width:200px ;
+    height:30px ;
+    margin-top: 12px;
+    position: relative;
+    right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-title .container .title {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-title .container .title {
+        width: 100%; /* Adjust width for even smaller screens */
+    }
+}
+
+
+
+
+
+
+

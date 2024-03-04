@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Kantumruy Pro", sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+*::selection{
+    background:#1890ff ;
+    color:white ;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color:white;
+    height: 2000px;
+}
+header{
+    width: 100%;
+    background-color:#014282;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: .2s;
+    padding: 0 70px;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+header .navbar ul li{
+    margin:0 1rem ;
+}
+header .navbar ul li a{
+    font-size: 1.6rem;
+    color: white;
+}
+header .navbar ul li .active{
+    border-bottom: 2px solid #ff7c00;
+}
+header .navbar ul li a:hover{
+    border-bottom: 2px solid #ff7c00;
+}
+header .navbar ul li img{
+    width: 40px;
+    height: 30px;
+}
+header .navbar ul li a button{
+    font-size: 1.5rem;
+    color: #014282;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+header .navbar ul li a button:hover{
+    background-color: #ff7c00;
+    color: white;
+}
+header .logo {
+    color: rgb(243, 153, 168);
+    padding:0 2rem ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: rgb(242, 150, 165);
+    cursor: pointer;
+    display: none;
+    transition: 2s;
+}
+header .logo img{
+    width:100% ;
+    height: 80px; 
+    
+}
+.one{
+    position: relative;
+    top: 86px;
+    background-color:white;
+    width: 100%;
+    text-align: center;
+    height: 20vh;
+    padding: 40px;
+    
+}
+.one .one1{
+    background-color: #fff;
+    width: 100%;
+    height:40px ;
+}
+.one b{
+    color: #014282;
+    font-size: 2.5rem;  
+    font-weight: 700;
+    
+}
+.one .one2{
+    background-color: #fff;
+    width: 100%;
+    height:60px ;
+    display: flex;
+    justify-content: center;
+}
+.one .one2 .lo{
+    width:99% ;
+    height: 70px;
+    background-color:  #fff;
+}
+.one  p{
+    color: #202020;
+    font-size: 15px;
+    padding: 10px 110px;
+    
+}
+
+.container{
+    width: 100%;
+    height: 1600px;
+    background-color: #fff;
+    margin-top: 50px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+   
+}
+.container .container1{
+    width: 75%;
+    height: 1000px;
+    background-color:  #fff;
+    /* margin-top: 50px; */
+    /* position: relative; */
+   display: flex;
+   justify-content: space-between;
+}
+.container .left{
+    width: 50%;
+    height: 1600px;
+    background-color:  #fff;
+    flex: 1 1 auto;
+    /* padding: 20px ; */
+    /* display: flex;
+    justify-content: center; */
+}
+.container .container1 .left .box1{
+    width: 95%;
+    height: 300px;
+    background-color: none;
+    border-radius: 20px;
+    position: relative;
+    /* left: 15px; */
+    
+}
+.container .container1 .left .box1 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .left .box1 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .left .box1 .text2{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .left .box1 .text2 p{
+    position: relative;
+    left: 30px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+    width: 85%;
+    line-height: 25px;
+}
+.container .container1 .left .box1 .box1-body{
+    width: 100%;
+    height: 90px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .left .box1 .box1-body p{
+    position: relative;
+    left: 30px;
+    color:rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+    
+}
+.container .container1 .left .box1 .box1-body a{
+    color: rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 50px 40px;
+    position: relative;
+    top: -10px;
+    
+}
+.container .container1 .left .box1 .box1-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+.container .container1 .left .box2{
+    width: 95%;
+    height: 430px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: relative;
+    /* left: 15px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px 0px;
+}
+.container .container1 .left .box2 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .left .box2 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .left .box2 .text2{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .left .box2 .text2 p{
+    position: relative;
+    left: 30px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+    width: 85%;
+    line-height: 25px;
+}
+.container .container1 .left .box2 .box2-body{
+    width: 100%;
+    height: 270px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .left .box2 .box2-body h3{
+    position: relative;
+    left: 30px;
+    color:rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+}
+.container .container1 .left .box2 .box2-body ul li::marker{
+    color: #ff7c00;
+    font-size: 2rem;
+}
+.container .container1 .left .box2 .box2-body ul{
+    width: 70%;
+    height: 100px;
+    position: relative;
+    margin-top: -20px;
+    
+}
+.container .container1 .left .box2 .box2-body ul li{
+    position: relative;
+    left: 75px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    line-height: 25px;
+
+}
+.container .container1 .left .box2 .box2-body p{
+    color:  rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    left: 10px;
+    padding: 30px ;
+    position: relative;
+    top: 30px;
+}
+.container .container1 .left .box2 .box2-body a{
+    color:  rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    /* left: 20px; */
+    top: 10px;
+    position: relative;
+    left: 40px;
+    text-decoration: underline;
+    
+}
+.container .container1 .left .box2 .box2-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container .container1 .left .box2 .box2-footer p{
+    font-weight: 700;
+    color:#fff;
+    padding: 20px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .container1 .left .box3{
+    width: 95%;
+    height: 430px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: relative;
+    /* left: 15px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px 0px;
+}
+.container .container1 .left .box3 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .left .box3 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .left .box3 .text2{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .left .box3 .text2 p{
+    position: relative;
+    left: 10px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 30px;
+}
+.container .container1 .left .box3 .box3-body{
+    width: 100%;
+    height: 400px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .left .box3 .box3-body ul{
+    position: relative;
+    margin-top: -40px;
+}
+.container .container1 .left .box3 .box3-body ul li::marker{
+    color: #ff7c00;
+    font-size: 2rem;
+}
+.container .container1 .left .box3 .box3-body ul li{
+    position: relative;
+    left: 70px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    width: 60%;
+    line-height: 25px;
+}
+.container .container1 .left .box3 .box3-body p{
+    color:  rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    left: 10px;
+    padding: 30px ;
+    position: relative;
+    top: -10px;
+}
+.container .container1 .left .box3 .box3-body a{
+    color:  rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    
+    top: -35px;
+    position: relative;
+    left: 40px;
+    text-decoration: underline;
+    
+}
+.container .container1 .left .box3 .box3-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    text-align: center;
+   
+}
+.container .container1 .left .box3 .box3-footer p{
+    font-weight: 700;
+    color:#fff;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container .right{
+    width: 50%;
+    height: 1600px;
+    background-color:  #fff;
+    flex: 1 1 auto;
+    /* padding: 20px ; */
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.container .container1 .right .box1{
+    width: 95%;
+    height: 380px;
+    background-color:  #fff;
+    border-radius: 20px;
+    position: relative;
+    left: 25px;
+    
+}
+.container .container1 .right .box1 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .right .box1 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .right .box1 .text2{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .right .box1 .text2 p{
+    position: relative;
+    left: 10px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 30px;
+}
+.container .container1 .right .box1 .box1-body{
+    width: 100%;
+    height: 150px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .right .box1 .box1-body ul{
+    position: relative;
+    margin-top: -40px;
+}
+.container .container1 .right .box1 .box1-body ul li::marker{
+    color: #ff7c00;
+    font-size: 2rem;
+}
+.container .container1 .right .box1 .box1-body ul li{
+    position: relative;
+    left: 70px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    width: 60%;
+    line-height: 25px;
+}
+.container .container1 .right .box1 .box1-body p{
+    color:  rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    left: 10px;
+    padding: 30px ;
+    position: relative;
+    top: -10px;
+}
+.container .container1 .right .box1 .box1-body a{
+    color:  rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    
+    top: -35px;
+    position: relative;
+    left: 40px;
+    text-decoration: underline;
+    
+}
+.container .container1 .right .box1 .box1-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    text-align: center;
+   
+}
+.container .container1 .right .box1 .box1-footer p{
+    font-weight: 700;
+    color:#fff;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .container1 .right .box2{
+    width: 95%;
+    height: 430px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: relative;
+    left: 23px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px 0px;
+    
+}
+.container .container1 .right .box2 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .right .box2 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .right .box2 .text2{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .right .box2 .text2 p{
+    position: relative;
+    left: 30px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+    width: 85%;
+    line-height: 25px;
+}
+.container .container1 .right .box2 .box2-body{
+    width: 100%;
+    height: 270px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .right .box2 .box2-body h3{
+    position: relative;
+    left: 30px;
+    color:rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+}
+.container .container1 .right .box2 .box2-body ul li::marker{
+    color: #ff7c00;
+    font-size: 2rem;
+}
+.container .container1 .right .box2 .box2-body ul{
+    width: 70%;
+    height: 100px;
+    position: relative;
+    margin-top: -20px;
+    
+}
+.container .container1 .right .box2 .box2-body ul li{
+    position: relative;
+    left: 75px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    line-height: 25px;
+
+}
+.container .container1 .right .box2 .box2-body p{
+    color:  rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    left: 10px;
+    padding: 30px ;
+    position: relative;
+    top: 30px;
+}
+.container .container1 .right .box2 .box2-body a{
+    color:  rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    /* left: 20px; */
+    top: 10px;
+    position: relative;
+    left: 40px;
+    text-decoration: underline;
+    
+}
+.container .container1 .right .box2 .box2-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container .container1 .right .box2 .box2-footer p{
+    font-weight: 700;
+    color:#fff;
+    padding: 20px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+.container .container1 .right .box3{
+    width: 95%;
+    height: 430px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: relative;
+    left: 23px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px 0px;
+    
+}
+.container .container1 .right .box3 .text1{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 66, 130);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    
+}
+.container .container1 .right .box3 .text1 h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.container .container1 .right .box3 .text2{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+   
+    
+}
+.container .container1 .right .box3 .text2 p{
+    position: relative;
+    left: 30px;
+    color:#202020;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 10px;
+    width: 85%;
+    line-height: 25px;
+}
+.container .container1 .right .box3 .box3-body{
+    width: 100%;
+    height: 270px;
+    background-color:rgb(228, 226, 226);
+}
+.container .container1 .right .box3 .box3-body .rr p{
+    position: relative;
+    left: 10px;
+    color:rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    top: -10px;
+    
+}
+.container .container1 .right .box3 .box3-body ul li::marker{
+    color: #ff7c00;
+    font-size: 2rem;
+}
+.container .container1 .right .box3 .box3-body ul{
+    width: 70%;
+    height: 100px;
+    position: relative;
+    margin-top: -40px;
+    
+}
+.container .container1 .right .box3 .box3-body ul li{
+    position: relative;
+    left: 75px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    line-height: 25px;
+
+}
+.container .container1 .right .box3 .box3-body p{
+    color:  rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 500;
+    left: 10px;
+    padding: 30px ;
+    position: relative;
+    top: 30px;
+}
+.container .container1 .right .box3 .box3-body a{
+    color:  rgb(1, 66, 130);
+    font-size: 15px;
+    font-weight: 500;
+    /* left: 20px; */
+    top: 10px;
+    position: relative;
+    left: 40px;
+    text-decoration: underline;
+    
+}
+
+.container .container1 .right .box3 .box3-footer{
+    background-color: rgb(35, 176, 230);
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container .container1 .right .box3 .box3-footer p{
+    font-weight: 700;
+    color:#fff;
+    padding: 20px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+.uu{
+    width:100% ;
+    height: 20px;
+    background-color:rgb(30, 30, 137) ;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color:rgb(1, 66, 130);
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-container{
+    width: 75%;
+    height: 50vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .logo{
+    width: 100%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    /* padding: 20px; */
+}
+.footer .footer-container .logo svg{
+    width: 97px;
+    height: 97px;
+    margin-top: 20px;
+}
+.footer .footer-container .logo img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+}
+.footer .footer-container .flex-row{
+    width: 100%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-container .flex-row .flex-row-left{
+    width: 50%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .flex-row .flex-row-left i{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 5px;
+}
+.footer .footer-container .flex-row .flex-row-left a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+}
+.footer .footer-container .flex-row .flex-row-left a:hover{
+    border-bottom: 2px solid #ff7c00;
+    
+}
+.footer .footer-container .flex-row .flex-row-center{
+    width: 25%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+}
+.footer .footer-container .flex-row .flex-row-center a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer .footer-container .flex-row .flex-row-center a:hover{
+    border-bottom: 2px solid #ff7c00;
+}
+.footer .footer-container .flex-row .flex-row-right{
+    width: 25%;
+    height: 25vh;
+    background-color:rgb(1, 66, 130);
+    position: relative;
+    left: 30px;
+}
+.footer .footer-container .flex-row .flex-row-right a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer .footer-container .flex-row .flex-row-right i{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 7px;
+    transition: 0.5s;
+    position: relative;
+    right: 10px;
+    
+}
+.footer .footer-container .flex-row .flex-row-right i:hover{
+    color: #ff7c00;
+    cursor: pointer;
+    
+}
+.two{
+    width: 100%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+    display: flex;
+    justify-content: center;
+}
+.two .two-one{
+    width: 75%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+    display: flex;
+    justify-content: space-between;
+}
+.two .two-one .qq{
+    width: 65%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .qq p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 19px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+}
+.two .two-one .ww{
+    width: 15%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .ww p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 19px;
+    font-weight: 500;
+    position: relative;
+    left: 25px;
+}
+.two .two-one .ee{
+    width: 20%;
+    height: 9vh;
+    background-color:rgb(1, 45, 88);
+}
+.two .two-one .ee img{
+    width:200px ;
+    height:30px ;
+    margin-top: 12px;
+    position: relative;
+    right: 20px;
+}
