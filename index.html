@@ -59,7 +59,7 @@
     {
         transition: rotate .5s;
     }
-    header .navbar:hover i {
+    header .ee:hover i {
         rotate:180deg;
         transition: 0.5s;
     }
@@ -72,7 +72,7 @@
         </a>
         <nav class="navbar">
             <ul>
-                <li>
+                <li class="ee">
                     <a href="index.html" style="border-bottom: none;">ចុះឈ្មោះដែនជាតិ <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="dropdown">
                         <div class="submenu-one">
@@ -91,11 +91,11 @@
                 <li><a href="register.html">របៀបចុះឈ្មោះ</a></li>
                 <li><a href="document.html">ឯកសារភ្ជាប់</a></li>
                 <li><a href="aboutname.html">អំពីឈ្មោះដែនជាតិ.kh</a></li>
-                <li><a href="enteraccount.html"><button><b>ចូលគណនី</b></button></a></li>
-                <li><a href=""><img src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg" alt=""></a></li>
+                <li><a href="enteraccount.html"><button style="cursor: pointer;"><b>ចូលគណនី</b></button></a></li>
+                <li><a href="" style="border-bottom: none;"><img src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg" alt=""></a></li>
             </ul>
         </nav>
-        <div class="fa fa-bars"></div>
+        <!-- <div><svg xmlns="http://www.w3.org/2000/svg" width="26.916" height="18.634" viewBox="0 0 26.916 18.634"><g transform="translate(-122.5 -122.5)"><path d="M124.57,122.5a2.07,2.07,0,1,0,1.464.606A2.071,2.071,0,0,0,124.57,122.5Z" fill="#fff"></path><path d="M227.877,142.127H242.37a1.061,1.061,0,1,0,0-2.122H227.877a1.077,1.077,0,1,0,0,2.153Z" transform="translate(-98.13 -16.469)" fill="#fff"></path><path d="M124.57,245a2.07,2.07,0,1,0,1.464.606A2.071,2.071,0,0,0,124.57,245Z" transform="translate(0 -115.253)" fill="#fff"></path><path d="M228.535,264.57h10.352a1.035,1.035,0,1,0,0-2.07H228.535a1.035,1.035,0,1,0,0,2.07Z" transform="translate(-98.789 -131.718)" fill="#fff"></path><path d="M124.57,367.5a2.07,2.07,0,1,0,1.464.606A2.071,2.071,0,0,0,124.57,367.5Z" transform="translate(0 -230.507)" fill="#fff"></path><path d="M247.17,385H228.535a1.035,1.035,0,1,0,0,2.07H247.17a1.035,1.035,0,1,0,0-2.07Z" transform="translate(-98.789 -246.971)" fill="#fff"></path></g></svg></div> -->
     </header>
     <div class="fix-actions">
         <div class="top">
@@ -115,7 +115,14 @@
                 <form action="">
                     <i class="fa-solid fa-magnifying-glass prefix"></i>
                     <input type="text" placeholder="ស្វែងរកឈ្មោះដែនជាតិ">
-                    <p>| <span>.kh<i class="fa-solid fa-chevron-down"></i></span></p>
+                    <p  onclick="myFunction()" class="dropbtn">| <span>.kh<i class="fa-solid fa-chevron-down"></i></span></p>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href=""><span>.kh</span></a>
+                        <a href=""><span>.com.kh</span></a>
+                        <a href=""><span>.net.kh</span></a>
+                        <a href=""><span>.org.kh</span></a>
+                        <a href=""><span>.edu.kh</span></a>
+                      </div>
                     <button><b>ស្វែងរក</b>
                     </button>
                  
@@ -206,7 +213,7 @@
                             ពិនិត្យ និងបង់ប្រាក់
                         </li>
                         <!-- <span class="number-none"></span> -->
-                        <a href="" class="more-info">មើលព័ត៌មានបន្ថែម</a>
+                        <a href="" class="more-info" >មើលព័ត៌មានបន្ថែម</a>
                     </ol>
                 </div>
             </div>
@@ -224,6 +231,10 @@
                     <h3>តើឈ្មោះដែន (Domain Name) ជាអ្វី?</h3>
                     <p>+</p>
                 </div>
+                <!-- <div class="class_text" style="border-bottom: 2px solid rgba(43, 43, 126, 0.822);">
+                    <p>ឈ្មោះដែន​គឺជា​ឈ្មោះ​កំណត់​អត្តសញ្ញាណ​តែមួយ​គត់​នៅ​ក្នុង​សកលលោក​ ​ដែល​សម្រួល​ឱ្យ​សាធារណជន​អាច​ទៅ​រក​ធនធាន​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​នៅ​ក្នុង​តំបន់​។​ ​និយាយ​ឱ្យ​ស្រួល​ទៅ​​វា​គឺជា​អាសយដ្ឋាន​ប្រៃសណីយ៍​របស់​អ្នក​នៅ​ក្នុង​ពិភព​អុី​ន​ធឺ​ណិ​ត​។</p>
+                </div> -->
+                <br>
                     <hr>
                 <div class="one">
                     <h3>តើដែនកម្រិតទី១ (ឬដែនកម្រិតខ្ពស់) (top level domain) ជាអ្វី?</h3>
@@ -241,13 +252,17 @@
                     <h3>តើ​មាន​ប្រភេទ​ឈ្មោះ​ដែន​អ្វីខ្លះ​ដែល​អាច​ចុះឈ្មោះ​បាន​នៅ​ក្នុង​ព្រះរាជាណាចក្រកម្ពុជា​?</h3>
                     <p>+</p>
                 </div>
+                <!-- <div class="class_text">
+                    <p>ឈ្មោះដែន​គឺជា​ឈ្មោះ​កំណត់​អត្តសញ្ញាណ​តែមួយ​គត់​នៅ​ក្នុង​សកលលោក​ ​ដែល​សម្រួល​ឱ្យ​សាធារណជន​អាច​ទៅ​រក​ធនធាន​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​នៅ​ក្នុង​តំបន់​។​ ​និយាយ​ឱ្យ​ស្រួល​ទៅ​​វា​គឺជា​អាសយដ្ឋាន​ប្រៃសណីយ៍​របស់​អ្នក​នៅ​ក្នុង​ពិភព​អុី​ន​ធឺ​ណិ​ត​។</p>
+                </div> -->
                     <hr>
+                
                 <div class="one">
                     <h3>​ហេតុអ្វីបានជា​ព័ត៌មាន​ដែល​ខ្ញុំ​បាន​បំពេញ​ត្រូវ​បាន​បង្ហាញ​ជា​សាធារណៈ​?</h3>
                     <p>+</p>
                 </div>
                 <div class="button">
-                    <button id="view-more">មើលបន្ថែម</button>
+                    <button id="view-more" style="cursor: pointer;">មើលបន្ថែម</button>
                 </div>
                     
             </div>
@@ -277,6 +292,9 @@
             </div>
     </div>
     <div class="pp">
+        
+    </div>
+    <div class="ll">
         
     </div>
     <div class="footer">
@@ -323,5 +341,24 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 </body>
 </html>

@@ -21,11 +21,8 @@
     vertical-align: middle;
     background-image: url(https://dnskhblob.blob.core.windows.net/b2c/templates/src/backgrounds/1-1.png);
     background-size:100% ;
+    background-position: no-repeat;
 }
-/* .background .po img{
-    width: 100%;
-    z-index: ;
-} */
 .pic-header{
     width:100% ;
     height:20vh ;
@@ -35,24 +32,24 @@
 }
 .pic-header img{
     width: 150px;
-    height: 210px;
+    height: 180px;
     position: relative;
-    top: -50px;
+    top: -30px;
     z-index: 2;
 }
 .box{
     width:100% ;
-    height:100vh ;
+    height:400px;
     background-color: none;
     display: flex;
     justify-content: center;
 }
 .box .box-one{
-    position: relative;
-    top: -60px;
+    position: fixed;
+    top: 70px;
     z-index: 1;
-    width:40% ;
-    height:100vh ;
+    width:37% ;
+    min-height:520px ;
     border-color: #E3E3E3;
     background-color: rgba(255, 255, 255, 0.562);
     backdrop-filter: blur(15px);
@@ -60,41 +57,47 @@
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    /* border-bottom-color:rgb(227, 227, 227) ;
-    border-top-color:rgb(227, 227, 227) ; */
+
 }
 .box .box-one .box-two{
     position: relative;
-    top: 70px;
-    width:70% ;
+    top: 60px;
+    width:80% ;
     height:70vh ;
     background-color:none;
 }
 .box .box-one .box-two h2{
-    color: rgb(1, 66, 130);
+    color: #014282;
     font-size: 45px;
-    font-weight: 450;
+    font-weight: 600;
    text-align: center;
+   line-height: 1.1;
+   padding: 9px;
+   margin-top: -5px;
+   text-size-adjust: 100%;
+   line-height:49.5px
 }
 .box .box-one .box-two input::placeholder {
-    color: #6a6a6a;
+    color: #6a6a6ab4;
     font-size: 17px;
-    /* position: relative;
-    left: 15px; */
 }
 .box .box-one .box-two input{
     box-shadow: 1px 3px 5px 0px rgb(0 0 0 / 15%);
-    border-radius: 10px;
+    border-radius: 15px;
     width:100% ;
     height:8vh ;
     border: none;
-    margin-top: 15px;
-    
+    margin-top: 10px;
     padding: 6px 20px;
+}
+.box .box-one .box-two input:focus{
+    
+    border: 2px solid rgb(0 0 0 / 15%);
+    
 }
 .box .box-one .box-two button{
     box-shadow: 1px 3px 5px 0px rgb(0 0 0 / 15%);
-    border-radius: 10px;
+    border-radius: 15px;
     width:100% ;
     height:8vh ;
     border: none;
@@ -118,6 +121,10 @@
     top: 5px;
     
 }
+.box .box-one .box-two .box-three .left input,select{
+    border: 1px solid #f3f2f1;
+}
+
 .box .box-one .box-two .box-three .left label{
     font-size: 18px;
     font-weight:400 ;
@@ -140,37 +147,121 @@
    position: relative;
    top: 20px;
 }
-
+.box .box-one .box-two .ll{
+    width: 100%;
+    /* background-color: #3fa703; */
+    margin-top: 20px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
 .box .box-one .box-two .ll button{
     box-shadow: 1px 3px 5px 0px rgb(0 0 0 / 15%);
-    border-radius: 10px;
-    width:70% ;
+    border-radius: 15px;
+    width:60% ;
     height:8vh ;
     border: none;
-    margin-top: 30px;
+    margin-top: 14px;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    background-color: rgb(77, 203, 3);
+    background-color: rgb(70, 187, 2);
     font-weight: 500;
-    position: relative;
-    left: 50px;
+    /* position: relative;
+    left: 50px; */
+    
+
 }
 .box .box-one .box-two .ll button:hover{
     background-color:#3fa703 ;
 }
-.two{
+/* .two{
     z-index: 2;
     width: 100%;
-    height: 9vh;
-    background-color:rgb(1, 45, 88);
+    min-height:7vh;
+    background-color:#014282;
     text-align: center;
-    position: relative;
-    top: -160px;
+    position: fixed;
+    top: 93vh;
     padding: 10px;
     color: #fff;
     font-size:18px ;
     font-weight: 400;
 }
+.two span{
+    width: 100%;
+    min-height:7vh;
+} */
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #014282;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    z-index: 2;
+    font-size:18px ;
+}
+
+@media only screen and (max-width: 768px) {
+    .box .box-one {
+        width: 80%;
+    }
+
+    .box .box-one .box-two {
+        width: 90%;
+    }
+
+    .pic-header img {
+        width: 120px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box .box-one {
+        width: 100%;
+    }
+
+    .box .box-one .box-two {
+        width: 100%;
+    }
+
+    .pic-header img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .box .box-one .box-two h2 {
+        font-size: 30px;
+    }
+    .box .box-one{
+        position: fixed;
+        top: 50px;
+        z-index: 1;
+        width:90% ;
+        min-height:520px ;
+        border-color: #E3E3E3;
+        background-color: rgba(255, 255, 255, 0.562);
+        backdrop-filter: blur(15px);
+        box-shadow: inset 0px 0px 10px rgb(227 227 227 / 95%);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        
+    }
+    body {
+        font-size: 1.25em;
+    }
+    .background{
+        background-position: no-repeat;
+    }
+}
+
 
 
 

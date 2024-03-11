@@ -143,14 +143,14 @@ header .logo img{
 .box{
     width: 100%;
     height: 70vh;
-    background-color: #fff;
+    background-color:#fafafa;
     display: flex;
     justify-content: center;
 }
 .box .box1{
     width: 75%;
     height: 70vh;
-    background-color: #fff;
+    background-color:#fafafa;
     display: flex;
     justify-content: space-between;
 }
@@ -213,7 +213,7 @@ header .logo img{
 .box2{
     width:100% ;
     height: 60vh;
-    background-color: #fff;
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
 }
