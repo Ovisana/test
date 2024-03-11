@@ -365,10 +365,9 @@ header .logo img{
     background-color:rgb(1, 66, 130);
     display: flex;
     justify-content: center;
-    
 }
 .footer .footer-container{
-    width: 70%;
+    width: 75%;
     height: 50vh;
     background-color:rgb(1, 66, 130);
 }
@@ -379,9 +378,11 @@ header .logo img{
     /* padding: 20px; */
 }
 .footer .footer-container .logo svg{
-    width: 97px;
-    height: 97px;
-    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    position:relative;
+    /* margin-top: -300px; */
+    top: -4px;
 }
 .footer .footer-container .logo img{
     width: 100px;
@@ -424,13 +425,13 @@ header .logo img{
     height: 25vh;
     background-color:rgb(1, 66, 130);
 }
-.footer .footer-container .flex-row .flex-row-center a:hover{
-    border-bottom: 2px solid #ff7c00;
-}
 .footer .footer-container .flex-row .flex-row-center a{
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 500;
+}
+.footer .footer-container .flex-row .flex-row-center a:hover{
+    border-bottom: 2px solid #ff7c00;
 }
 .footer .footer-container .flex-row .flex-row-right{
     width: 25%;

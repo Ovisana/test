@@ -797,9 +797,11 @@ header .logo img{
     /* padding: 20px; */
 }
 .footer .footer-container .logo svg{
-    width: 97px;
-    height: 97px;
-    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    position:relative;
+    /* margin-top: -300px; */
+    top: -4px;
 }
 .footer .footer-container .logo img{
     width: 100px;
