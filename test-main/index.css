@@ -175,7 +175,7 @@ header .logo img{
     position: relative;
     top: 80px;
     background-color: #014282;
-    width: 100%;
+    max-width: 100%;
     height: 60vh;
 }
 .about .row{
@@ -269,67 +269,7 @@ header .logo img{
 
     
 }
-.teacher{
-    background: white;
-    position: relative;
-    top: 20px;
-}
-.teacher .card-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    
-}
-.teacher .card-container .card{
-    padding:2rem ;
-    margin: 1.3rem;
-    background:white ;
-    text-align: center;
-    /* width: 28rem; */
-    /* width: 290px; */
-    width: 300px;
-    box-shadow: 0 0 2px 2px rgba(177, 176, 176, 0.16);
-    border-radius: 10px;
-    /* align-items: ce; */
-    position: relative;
-    left: 10px;
-}
-.teacher .card-container .card hr{
-    width: 60px;
-    
-}
-.teacher .card-container .card img{
-    height: 94px;
-    width:96px ;
-}
-.teacher .card-container .card b{
-    color:#333;
-    font-size: 2rem;
-}
 
-/* .teacher .card-container .card span .border{
-    background: #bdbdbd;
-  height: 1px;
-  margin-bottom: 15px;
-  width: 60px;
-  border: 10px solid #dee2e6 ;
-} */
-.teacher .card-container .card span{
-    color: #014282;
-}
-.teacher .card-container .card p{
-    color:#333;
-    font-size: 16px;
-    font-weight: 500;
-    height: 50px;
-}
-.teacher .card-container .card .icons a{
-    color:#C63BFA;
-    font-size: 1.9rem;
-    padding:1.5rem .5rem;
-}
 .about1{
     position: relative;
     background-color: rgb(237, 241, 245);
@@ -349,34 +289,45 @@ header .logo img{
 }
 .home-how-to-buy{
     background: #f2f8fc;
-    width: 1250px;
-    height: 441px;
+    /* background-color: #1890ff; */
+    /* width: 1250px; */
+    width: 100%;
+    /* height: 441px; */
+    display: flex;
+    justify-content: center;
 }
 .home-how-to-buy .container{
     align-items: center;
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    max-width:  75%;
+    padding: 0px 16px;
+    /* background-color: #1890ff */
 }
 .home-how-to-buy .container .pic{
-    width: 464px;
-    height: 421px;
-    vertical-align: middle;
+    width: auto;
+    /* height: 421px; */
+    /* vertical-align: middle; */
     border-style: none;
     position: relative;
-    left: 160px;
+    /* left: 160px; */
+    /* background-color: #ff7c00; */
+   
 }
 .home-how-to-buy .container .pic img{
-    width: 464px;
+    max-width: 100%;
+    width: 100%;
     height: 421px;
     background: none;
     /* background-color: #1890ff; */
     position: relative;
     top: 20px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 .home-how-to-buy .container .document{
     width: 455px;
-    height: 259px;
+    height: auto;
     padding: 24px;
     align-items: stretch;
     background: #fff;
@@ -385,12 +336,12 @@ header .logo img{
     /* flex: 1 1 auto; */
     justify-content: flex-start;
     /* background-color: #C63BFA; */
-    position: relative;
-    left: 200px;
+    /* position: relative; */
+    /* left: 200px; */
 }
 .home-how-to-buy .container .document .in h2{
     color: #014282;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 24px;
     text-align: center;
@@ -403,6 +354,7 @@ header .logo img{
     margin-bottom: 7px;
     word-break: break-word;
     font-weight: 500;
+    color: rgb(77, 77, 77);
 }
 .home-how-to-buy .container .document .in span {
     align-items: center;
@@ -429,29 +381,35 @@ header .logo img{
 }
 
 .container1{
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    padding: 30px;
+    margin-bottom: 20px;
     width:99.50%;
-    height: 430px;
-    background-color: #fff;
+    /* height: 430px; */
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
+    /* position: relative; */
 }
 .container1 .container2{
     width: 955px;
-    height: 430px;
-    background-color:#fff;
+    /* height: 430px; */
+    background-color:#fafafa;
     position: relative;
     left: 15px;
 
 }
 .container1 .container2 .first{
     text-align: center;
+    width: 100%;
+    height: 12%;
     padding: 10px;
     color: #014282;
     
 }
-.container1 .container2 .first h3{
+.container1 .container2 .first h2{
     font-size: 25px;
+    font-weight: 600;
 }
 .one{
     width: 100%;
@@ -494,10 +452,20 @@ header .logo img{
 }
 .sponsor{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     background-color:#fff;
+    /* background-color: #1890ff; */
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sponsor1{
+    max-width: 75%;
+    /* height: 80vh; */
+    background-color:#fff;
+    /* background-color: red; */
+   
 }
 .sponsor h2{
     color: #014282;
@@ -512,22 +480,25 @@ header .logo img{
 }
 .sponsor .pic{
     width:100%;
-    height: 370px;
+    /* height: 370px; */
     background-color: #fff;
     display: flex;
     justify-content: center;
 }
 .sponsor .pic .pic1{
-    width:80%;
+    width:100%;
     height: 370px;
     background-color:#fff;
-    position: relative;
-    left: 10px;
+    /* background-color: #1890ff; */
+    /* position: relative; */
+    /* left: 10px; */
+    /* padding: 0px 10px; */
 }
 .sponsor .pic .pic1 .row1{
     width: 100%;
     height: 180px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-color: #1890ff; */
     display: flex;
     justify-content: space-between;
 }
@@ -559,21 +530,27 @@ header .logo img{
     background-color: rgb(1, 66, 130);
 }
 .footer{
-    width: 100%;
-    height: 50vh;
+    max-width: 100%;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #ff7c00; */
     display: flex;
     justify-content: center;
 }
 .footer .footer-container{
+    max-width: 1000px;
     width: 75%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 .footer .footer-container .logo{
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #9d9d9d; */
     /* padding: 20px; */
 }
 .footer .footer-container .logo svg{
@@ -591,16 +568,19 @@ header .logo img{
     margin-top: 20px;
 }
 .footer .footer-container .flex-row{
+    max-width: 1000px;
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #f2f8fc; */
     display: flex;
     justify-content: space-between;
 }
 .footer .footer-container .flex-row .flex-row-left{
     width: 50%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-left i{
     font-size: 24px;
@@ -621,8 +601,9 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-center{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-center a{
     color: rgb(255, 255, 255);
@@ -634,10 +615,11 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-right{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
     position: relative;
-    left: 30px;
+    /* left: 30px; */
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-right a{
     color: rgb(255, 255, 255);
@@ -660,22 +642,24 @@ header .logo img{
     
 }
 .two{
-    width: 100%;
-    height: 9vh;
+    max-width: 100%;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
+    /* background-color: #1890ff; */
     display: flex;
     justify-content: center;
 }
 .two .two-one{
+    max-width: 1000px;
     width: 75%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
     display: flex;
     justify-content: space-between;
 }
 .two .two-one .qq{
     width: 65%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .qq p{
@@ -688,7 +672,7 @@ header .logo img{
 }
 .two .two-one .ww{
     width: 15%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ww p{
@@ -701,12 +685,12 @@ header .logo img{
 }
 .two .two-one .ee{
     width: 20%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ee img{
     width:200px ;
-    height:30px ;
+    /* height:30px ; */
     margin-top: 12px;
     position: relative;
     right: 20px;

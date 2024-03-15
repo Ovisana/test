@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+    *{
+    font-family: "Kantumruy Pro", sans-serif;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+    #background_branding_container{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 0;
+        display: block;
+    }
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    vertical-align: middle;
+    border: 0;
+    overflow-clip-margin: content-box;
+}
+.container {
+    text-align: center;
+    width: 100%;
+    display: table;
+    height: 100vh;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media only screen and (max-width: 600px){
+    .container {
+    background-image: url(https://dnskhblob.blob.core.windows.net/b2c/templates/src/backgrounds/1-1.png);
+    background-color: #fff;
+}
+}
+.container:before{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.container:after{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.row:before{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.row:after{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.col-lg-6 {
+    max-width: 470px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+    min-height: 1px;
+    /* display: block; */
+}
+@media only screen and (max-width: 600px){
+    .container .row .panel-default {
+    width: 354px;
+    margin: auto;
+}
+}
+.container .row .panel-default {
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-color: #E3E3E3;
+    box-shadow: inset 0px 0px 10px rgb(227 227 227 / 95%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* position: absolute; */
+}
+.unified_container .row .panel-default {
+    padding: 40px 30px;
+    height: 100%;
+}
+@media only screen and (max-width: 600px){
+    .container .row .panel-default {
+    border: none;
+}
+}
+.unified_container .row .panel-default .panel-body {
+    max-width: 380px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+.panel-body:before{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.panel-body:after{
+    clear: both;
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+.unified_container .row .panel-default .panel-body .companyLogo {
+    display: block;
+    position: absolute;
+    top: -92px;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default .panel-body img {
+    height: 14em;
+    }
+}
+.unified_container .row .panel-default .panel-body img {
+    max-width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 146px;
+    height: 175px;
+}
+.unified_container .row .panel-default #api {
+    display: table;
+    margin: 0;
+    width: 100%;
+}
+.unified_container .row .panel-default #api .localAccount {
+    top: 10px;
+    width: 100%;
+}
+.unified_container .row .panel-default #api .intro {
+    display: block;
+    text-align: center;
+    color: #014282;
+    position: relative;
+    top: -10px;
+}
+@media only screen and (max-width: 600px){
+    .container .row .panel-default #api .intro h2 {
+    font-size: 2.5em !important;
+}
+}
+.container .row .panel-default #api .intro h2 {
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    line-height: 1.1;
+    color: inherit;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 45px;
+}
+.unified_container .row .panel-default #api .localAccount .error {
+    color: #b00;
+    text-align: left;
+    font-weight: 500;
+}
+p {
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    line-height: 1.42857143;
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item {
+    position: relative;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+    line-height: 1.42857143;
+    color: #333;
+    font-weight: 500;
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item label {
+    display: none;
+}
+label {
+    font-weight: 600;
+    max-width: 100%;
+    margin-bottom: 5px;
+    cursor: default;
+    line-height: 1.42857143;
+    color: #333;
+    display: inline-block;
+}
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item input {
+    height: 38px !important;
+}
+}
+.container .row .panel-default #api .localAccount .entry .entry-item input {
+    box-shadow: 1px 3px 5px 0px rgb(0 0 0 / 15%);
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item input {
+    outline: 0;
+    background-color: #fff ;
+    background-image: none ;
+    border-radius: 15px;
+    /* color: rgba(85, 85, 85, 0); */
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.42857143;
+    padding: 10px 20px;
+    width: 100% ;
+    border: 1px solid #f3f2f1;
+    margin: 0;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    cursor: text;
+    position: relative;
+    top: -30px;
+    font-weight: 400;
+}
+/* input[type="email" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+} */
+.unified_container .row .panel-default #api .localAccount .entry .entry-item {
+    position: relative;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
+    text-align: left;
+    height: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.42857143;
+    color: #333;
+    
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item label {
+    display: none;
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
+    text-align: left;
+    height: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.42857143;
+    color: #333;
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#api .working {
+    background: url(data:image/gif;base64,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) no-repeat;
+    height: 8px;
+    width: 81%;
+    background-position: center;
+    position: absolute;
+}
+.working {
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default #api .localAccount .rememberMe {
+    bottom: 9.825em;
+}
+}
+.unified_container .row .panel-default #api .localAccount .rememberMe {
+    position: absolute;
+    display: block;
+    line-height: 1.42857143;
+    color: #333;
+    padding: 60px 0px;
+}
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default #api .localAccount .rememberMe>input[type="checkbox"] {
+    margin-top: 3px;
+}
+}
+.unified_container .row .panel-default #api .localAccount .rememberMe>input[type="checkbox"] {
+    vertical-align: top;
+}
+input[type=checkbox]{
+    margin: 4px 0 0;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+}
+input{
+    border: 1px solid #f3f2f1;
+    font: inherit;
+    color: inherit;
+    font-size: inherit;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.unified_container .row .panel-default #api .localAccount .entry .entry-item input:focus {
+    border: 2px solid rgb(0 0 0 / 15%);
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+}
+.unified_container .row .panel-default #api .localAccount .rememberMe>label {
+    font-weight: 500;
+    color: #014282;
+}
+.unified_container .row .panel-default #api .localAccount .entry .buttons {
+    margin-bottom: 2.25em;
+    margin-top: 1rem;
+    text-align: left;
+    position: relative;
+    top: -19px;
+}
+.buttons
+{
+    display: block;
+}
+@media only screen and (max-width: 600px){
+    .container .row .panel-default #api .localAccount .entry .buttons button {
+    height: 38px !important;
+}
+}
+.container .row .panel-default #api .localAccount .entry .buttons button {
+    width: 100%;
+    background-color: #ff7c00;
+    border-radius: 15px;
+    color: white !important;
+    font-weight: 600;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.3333333;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+    margin-left: 0;
+    padding: 10px 16px;
+    text-align: center;
+    touch-action: manipulation;
+    height: 50px;
+    
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+.container .row .panel-default #api .localAccount .entry .buttons button:hover {
+    background-color: #e66f00;
+}
+.buttons button:not([aria-disabled=true]) {
+    opacity: 1;
+}
+button{
+    text-transform: none;
+    overflow: visible;
+    text-rendering: auto;
+    font: inherit;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+.unified_container .row .panel-default #api .divider {
+    width: 100%;
+    border-top: 1px solid #9D9D9D;
+    display: block;
+    position: relative;
+    top: -20px;
+}
+.unified_container .row .panel-default #api .divider h2 {
+    display: none;
+}
+h2{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.create{
+    display: block;
+    line-height: 1.42857143;
+    position: relative;
+    top: -25px;
+}
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default #api .localAccount .create p {
+    margin-bottom: 4rem !important;
+}
+}
+.unified_container .row .panel-default #api .localAccount .create p {
+    margin-top: 1.5rem;
+    color: #014282;
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .unified_container .row .panel-default #api .localAccount .create #createAccount {
+    line-height: 1;
+    bottom: 1.9em;
+    height: 38px !important;
+}
+}
+.unified_container .row .panel-default #api .localAccount .create #createAccount {
+    display: inline-block;
+    font-size: 1em;
+    padding: 14px 16px;
+    text-align: center;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    animation: .5s ease-out 0s 1 slideInFromRight;
+    background-color: #47BC03 ;
+    color: white !important;
+    font-weight: 600;
+    background-image: none;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 10px rgb(0 0 0 / 15%);
+    margin-top: -10px;
+}
+.unified_container .row .panel-default #api .localAccount .create #createAccount:hover {
+    background-color:#3fa703 ;
+}
+@keyframes slideInFromRight{
+    0% {
+    opacity: 0;
+    transform: translateX(50%);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #014282;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    z-index: 2;
+    font-size:18px ;
+}
+@media only screen and (max-width: 600px){
+    .footer {
+    white-space: nowrap;
+    font-size: 12px;
+}
+.container .row .panel-default #api .intro h2 {
+    font-size: 20px;
+}
+.unified_container .row .panel-default #api .localAccount .rememberMe {
+    padding: 59px 0px;
+}
+.unified_container .row .panel-default #api .localAccount .create #createAccount {
+    position: relative;
+    top: -40px;
+}
+}
+</style>
+<body>
+    <div id="background_branding_container">
+        <img src="https://dnskhblob.blob.core.windows.net/b2c/templates/src/backgrounds/1-1.png" alt="">
+    </div>
+    <div class="container unified_container" role="presentation">
+        <div class="row">
+            <div class="col-xs-10 col-sm-8 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="companyLogo" data-tenant-branding-logo="true" src="https://dnskhblob.blob.core.windows.net/b2c/templates/src/images/artboard-kh-logo.png" alt="Company Logo">
+                        <div id="api" data-name="Unified">
+                            <div class="localAccount" aria-label="ចូលគណនីរបស់អ្នក" role="form">
+                                <div class="intro">
+                                    <h2>
+                                        ចូលគណនីរបស់អ្នក
+                                    </h2>
+                                </div>
+                                <div class="error pageLevel" aria-hidden="true" style="display: none;">
+                                    <p role="alert"></p>
+                                </div>
+                                <div class="entry">
+                                    <div class="entry-item">
+                                        <label for="signInName">
+                                        &ZeroWidthSpace;អ៊ី&ZeroWidthSpace;ម៉ែល
+                                        </label>
+                                        <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                                        <p role="alert" tabindex="1"></p>
+                                        </div>
+                                        <input type="email" id="signInName" name="Sign in name" placeholder="អ៊ីម៉ែល" value=""">
+                                    </div>
+                                    <div class="entry-item">
+                                    
+                                    <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                                        <p role="alert"></p>
+                                    </div>
+                                    <input type="password" id="password" name="Password" placeholder="ពាក្យសម្ងាត់" tabindex="1">
+                                </div>
+                                <div class="working"></div>
+                                    <div class="rememberMe">
+                                        <input id="rememberMe" type="checkbox" name="rememberMe" tabindex="1" style="margin-top: 7px;">
+                                        <label for="rememberMe" style="font-weight: 400; font-size: 18px;">ចងចាំខ្ញុំ</label>
+                                    </div>
+                                    <div class="buttons">
+                                        <button id="next" tabindex="1">ចូលប្រើប្រាស់</button>
+                                    </div>
+                                    <div class="password-label">
+                                        <label for="password" style="display: none;">ពាក្យសម្ងាត់</label>
+                                        <a style="float: right;position: relative;top: -61px;font-weight: 400; font-size: 18px;color: #014282;" id="forgotPassword" tabindex="2" href="/dnsgovkh.onmicrosoft.com/B2C_1A_B2C_1_khdomain_B2C_SIgnInSignUp/api/CombinedSigninAndSignup/forgotPassword?csrf_token=Tk45VksrcXo1K0pudXhpTytXSVhIZGJNd1FyK3hQNlFlbnBpRG5YdUhidFhleTJBM1Zvbk5jZWdrTzZrTk5nVzZVakRieStQSUpZMDFjbTY0c1htV2c9PTsyMDI0LTAzLTEyVDE1OjM5OjM1LjE4MDA3NjRaOzJwby9yZzNraFBqY0szR0ptWjdDRWc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI5MTQ0ZmZmZi04Yjc1LTQ1MGQtOWEyNy1hYjBmMjdhN2Y4OTkifQ&amp;p=B2C_1A_B2C_1_khdomain_B2C_SIgnInSignUp">ភ្លេចពាក្យសម្ងាត់?</a>
+                                    </div>
+                                </div>
+                                <div class="divider">
+                                     <h2>ឬ</h2>
+                                </div>
+                                <div class="create">
+                                    <p style="font-weight: 400; font-size: 18px;">
+                                        មិនទាន់មានគណនី?
+                                    </p>
+                                    <a style="font-size: 18px;" id="createAccount" tabindex="1" href="/dnsgovkh.onmicrosoft.com/B2C_1A_B2C_1_khdomain_B2C_SIgnInSignUp/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=Tk45VksrcXo1K0pudXhpTytXSVhIZGJNd1FyK3hQNlFlbnBpRG5YdUhidFhleTJBM1Zvbk5jZWdrTzZrTk5nVzZVakRieStQSUpZMDFjbTY0c1htV2c9PTsyMDI0LTAzLTEyVDE1OjM5OjM1LjE4MDA3NjRaOzJwby9yZzNraFBqY0szR0ptWjdDRWc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI5MTQ0ZmZmZi04Yjc1LTQ1MGQtOWEyNy1hYjBmMjdhN2Y4OTkifQ&amp;p=B2C_1A_B2C_1_khdomain_B2C_SIgnInSignUp">បង្កើតគណនី</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <span class="imprint imprint-km">© រក្សាសិទ្ធិ 2022 • ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ | រក្សា&ZeroWidthSpace;&ZeroWidthSpace;សិទ្ធិ&ZeroWidthSpace;គ្រប់យ៉ាង</span>
+        </div>
+    </div>
+</body>
+</html>

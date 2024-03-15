@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Kantumruy Pro", sans-serif;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.accordion{
+    max-width: 530px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 15px;
+    padding: 15px;
+    /* border-radius: 8px; */
+}
+.accordion .accordion_content{
+    background-color: #fff;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.accordion_content.open{
+    padding-bottom: 10px;
+}
+.accordion_content.open header{
+    min-height: 35px;
+}
+.accordion .accordion_content header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    min-height: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.1s linear;
+}
+.accordion_content .description{
+    padding: 0px 15px;
+    border-left: 2px solid blue;
+    font-weight:400 ;
+    height: 0;
+    font-size: 14px;
+    color:#4f4f4f ;
+    transition: all 0.2s linear;
+}
+.accordion_content header .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+</style>
+<body>
+    <div class="accordion">
+        <div class="accordion_content">
+            <header>
+                <span class="title">តើឈ្មោះដែន (Domain Name) ជាអ្វី?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                ឈ្មោះដែន​គឺជា​ឈ្មោះ​កំណត់​អត្តសញ្ញាណ​តែមួយ​គត់​នៅ​ក្នុង​សកលលោក​ ​ដែល​សម្រួល​ឱ្យ​សាធារណជន​អាច​ទៅ​រក​ធនធាន​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​នៅ​ក្នុង​តំបន់​។​ ​និយាយ​ឱ្យ​ស្រួល​ទៅ​​វា​គឺជា​អាសយដ្ឋាន​ប្រៃសណីយ៍​របស់​អ្នក​នៅ​ក្នុង​ពិភព​អុី​ន​ធឺ​ណិ​ត​។
+            </p>
+        </div>    
+        <div class="accordion_content">
+            <header>
+                <span class="title">តើដែនកម្រិតទី១ (ឬដែនកម្រិតខ្ពស់) (top level domain) ជាអ្វី?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                ដែន​ក​ម្រិ​ត​ទី​១​ (​ឬ​ដែន​ក​ម្រិ​ត​ខ្ពស់​) (​top​ ​level​ ​domain​) ​សំដៅ​ដល់​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​។​
+
+                ឧទាហរណ៍​៖​ ​ដែន​ “.k​h​” ​និង​ “.​ខ្មែរ​ ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​ក្នុង​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ជាតិ​របស់​ព្រះរាជាណាចក្រកម្ពុជា​ ​ដែល​ត្រូវ​បាន​បង្ហាញ​ជា​អត្តសញ្ញាណ​ ​នៃ​ព្រះរាជាណាចក្រកម្ពុជា​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​។
+            </p>
+        </div>  
+        <div class="accordion_content">
+            <header>
+                <span class="title" style="margin-bottom: 10px;">តើដែនកម្រិតទី១ទូទៅ (generic top level domain - gTLD) និងដែនកម្រិតទី១តាមកូដប្រទេស (country code top-level domain - ccTLD) ខុសគ្នាដូចមេ្តច?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                ដែន​ក​ម្រិ​ត​ទី​១​ទូទៅ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​ ​ដែល​មានឈ្មោះ​ដូចជា​ .​co​m​, .​net​ ​និង​ .or​g​។​
+
+​                ដែន​ក​ម្រិ​ត​ទី​១​ទូទៅ​មិន​ត្រូវ​បាន​កំណត់​ឬ​តំណាង​ឱ្យ​ប្រទេស​ណាមួយ​ទេ​ហើយ​ដែន​នេះ​ត្រូវ​បាន​គ្រប់គ្រង​ដោយ​សាជីវកម្ម​គ្រប់គ្រង​អាសយដ្ឋាន​ឈ្មោះ​និង​លេខ​អុី​ន​ធឺ​ណិ​ត​ (​Inter​net​ ​Corporation​ ​for​ ​Assign​e​d​ ​Name​s ​and​ ​Number​s - ​I​CAN​N). ​ដែន​ក​ម្រិ​ត​ទី​១​តាម​កូ​ដ​ប្រទេស​ (​country​ ​code​ ​top​-​level​ ​domain​ - cc​T​L​D​) ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​ដែល​ត្រូវ​បាន​រក្សាទុក​សម្រាប់​ប្រទេស​ ​តំបន់​ ​ឬ​ទីតាំង​ភូមិសាស្ត្រ​ណាមួយ​។​ ​ឧទាហរណ៍​៖​ k​h​ ​ជា​ដែន​ក​ម្រិ​ត​ទី​១​តាម​កូ​ដ​ប្រទេស​សម្រាប់​ព្រះរាជាណាចក្រកម្ពុជា​។
+            </p>
+        </div>  
+        <div class="accordion_content">
+            <header>
+                <span class="title">តើ​មាន​ប្រភេទ​ឈ្មោះ​ដែន​អ្វីខ្លះ​ដែល​អាច​ចុះឈ្មោះ​បាន​នៅ​ក្នុង​ព្រះរាជាណាចក្រកម្ពុជា​?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                អ្នកអាចចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី១ និងដែនកម្រិតទី២។ ការចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី១ មានពីរទម្រង់៖
+
+                ១-«ឈ្មោះដែលស្នើសុំ».kh សម្រាប់បុគ្គលនៅក្នុងនិងក្រៅព្រះរាជាណាចក្រកម្ពុជា
+
+                ២-«ឈ្មោះដែលស្នើសុំ».ខ្មែរ
+                សម្រាប់បុគ្គលនៅក្នុងនិងក្រៅព្រះរាជាណាចក្រកម្ពុជាការចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី២មានទម្រង់ដូចខាងក្រោម៖
+
+                ១-«ឈ្មោះដែលស្នើសុំ».com.kh ជាប្រភេទដែនសម្រាប់សហគ្រាសពាណិជ្ជកម្ម ឬសហគ្រាសសាធារណៈ
+
+                ២-«ឈ្មោះដែលស្នើសុំ».org.kh ជាប្រភេទដែនសម្រាប់អង្គការ សមាគម និងសហជីព
+
+                ៣-«ឈ្មោះដែលស្នើសុំ».edu.kh ជាប្រភេទដែនសម្រាប់គ្រឹះស្ថានសិក្សារដ្ឋ និងឯកជន
+
+                ៤-«ឈ្មោះដែលស្នើសុំ».net.kh ជា​ប្រភេទ​ដែន​សម្រាប់​ក្រុមហ៊ុន​ឬ​ស្ថាប័ន​ផ្តល់​សេវា​បណ្តាញ​កុំព្យូទ័រ
+                            </p>
+        </div>  
+        <div class="accordion_content">
+            <header>
+                <span class="title">​ហេតុអ្វីបានជា​ព័ត៌មាន​ដែល​ខ្ញុំ​បាន​បំពេញ​ត្រូវ​បាន​បង្ហាញ​ជា​សាធារណៈ​?</span>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <p class="description">
+                ​នៅពេលដែល​អ្នក​ចុះឈ្មោះ​ប្រើប្រាស់​ឈ្មោះ​ដែន​អ្នក​បាន​ឯកភាព​ក្នុង​ការ​ផ្តល់​នូវ​ព័ត៌មាន​ដែល​អ្នក​បាន​បំពេញ​ក្នុង​ពេល​ស្នើសុំ​ចុះឈ្មោះ​ដែន​ដាក់​បង្ហាញ​ជា​សាធារណៈ​នៅ​មូល​ទិន្នន័យ​សម្រាប់​ដំណើរការ​វិធីការ​ព័ត៌​មានឈ្មោះ​ដែន​ជាតិ​ (​WHO​I​S ​D​at​abase​) ​ព័ត៌មាន​នេះ​ដាក់​តាំង​បង្ហាញ​ដើម្បី​អនុញ្ញាត​ឱ្យ​សាធារណជន​ដឹង​អំពី​ស្ថានភាព​នៃ​ឈ្មោះ​ដែន​របស់​អ្នក​ឬ​ទាក់ទង​ទៅ​អ្នក​ពាក់ព័ន្ធ​បញ្ហា​បច្ចេកទេស​ផ្សេងៗ​។
+            </p>
+        </div>  
+    </div>
+</body>
+<script>
+    const accordionContent=document.querySelectorAll(".accordion_content");
+
+    accordionContent.forEach((item,index)=>{
+        let header=item.querySelector("header");
+        header.addEventListener("click",()=>{
+            item.classList.toggle("open");
+
+            let description=item.querySelector(".description");
+            if(item.classList.contains("open")){
+                description.style.height=`${description.scrollHeight}px`;
+                item.querySelector("i").classList.replace("fa-plus","fa-minus")
+            }else{
+                description.style.height="0px";
+                item.querySelector("i").classList.replace("fa-minus","fa-plus")
+            }
+            removeOpen(index);
+        })
+    })
+    function removeOpen(index1){
+        accordionContent.forEach((item2,index2) => {
+            if(index1!=index2){
+                item2.classList.remove("open");
+                let des=item2.querySelector(".description");
+                des.style.height="0px";
+                item2.querySelector("i").classList.replace("fa-minus","fa-plus");
+            }
+        })
+    }
+</script>
+</html>

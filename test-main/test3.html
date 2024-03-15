@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Kantumruy Pro", sans-serif;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordion{
+    max-width: 530px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 15px;
+    padding: 15px;
+    /* border-radius: 8px; */
+}
+.accordion .accordion_content{
+    background-color: gray;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.accordion_content.open{
+    padding-bottom: 80px;
+}
+.accordion_content.open header{
+    min-height: 35px;
+}
+.accordion .accordion_content header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    min-height: 50px;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    transition: all 0.1s linear;
+}
+.accordion_content .description{
+    padding: 0 15px;
+    border-left: 2px solid blue;
+    /* font-weight: ; */
+    height: 0;
+    /* font-size: ; */
+    /* color: ; */
+    /* transition: all 0.2s linear; */
+}
+.accordion_content header .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: aquamarine;
+}
+</style>
+<body>
+    <div class="accordion">
+        
+    </div>
+</body>
+<script>
+    const accordionContent=document.querySelectorAll(".accordion_content");
+    accordionContent.forEach((item,index)=>{
+        let header=item.querySelector("header");
+        header.addEventListener("click",()=>{
+            item.classList.toggle("open");
+            let description=item.querySelector(".description");
+            if(item.classList.contains("open")){
+                description.style.height='${description.scrollHeight}px';
+                item.querySelector("i").classList.replace("fa-plus","fa-minus")
+            }else{
+                description.style.height='0px';
+                item.querySelector("i").classList.replace("fa-minus","fa-plus")
+            }
+            removeOpen(index);
+        })
+    })
+    function removeOpen(index1){
+        accordionContent.forEach((item2,index2) => {
+            if(index1!=index2){
+                item2.classList.remove("open");
+                let des=item2.querySelector(".description");
+                des.style.height="0px";
+                item2.querySelector("i").classList.replace("fa-minus","fa-plus");
+            }
+        })
+    }
+</script>
+</html>
