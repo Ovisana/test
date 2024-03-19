@@ -1,186 +1,168 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     font-family: "Kantumruy Pro", sans-serif;
+    /* text-transform: capitalize; */
     text-decoration: none;
     outline: none;
     margin: 0;
     padding:0;
+    box-sizing: border-box;
 }
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+@media (max-width: 959.9px){
+  .home-search-domain .container-1200 {
+    max-width: 600px;
 }
-
-.active, .collapsible:hover {
-  background-color: #555;
+.home-search-domain-container {
+    padding: 0;
 }
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+.home-search-domain h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
 }
-
-.active:after {
-  content: "\2212";
+.search-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
-
-.content {
-  padding: 0px 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  border-left: 3px solid #014282;
-  
+.search-container .input {
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+    padding: 0 16px;
 }
-.content p{
-  padding: 10px;
-  color: #4f4f4f;
-  font-size: 15px;
-    line-height: calc(1.3em + 8px);
-    padding-left: 16px;
-    padding-right: 115px;
+.search-container .input input {
+    max-width: 204px;
+    max-width: 204px;
+    flex: 1 1 auto;
+}
+}
+.home-search-domain .container-1200 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+}
+.home-search-domain-container {
+    margin: 34px 0;
+    text-align: left;
+}
+.home-search-domain h1 {
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 500;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.home-title {
+    white-space: pre-line;
+}
+.orange {
+    color: #ff7c00;
+    text-align: left;
+}
+.search-container .input-container {
+    flex: 1 1 auto;
+    display: block;
+    text-align: left;
+}
+.search-container .input {
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 1px 30px rgba(0,0,0,.16);
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
     position: relative;
-
 }
+.search-container .input .prefix.icon-search {
+    margin-right: 16px;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    vertical-align: -0.125em;
+}
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+}
+.search-container .input input {
+    background: none;
+    border: none;
+    font-weight: 500;
+    height: 100%;
+    outline: none;
+    padding-right: 16px;
+    width: 1%;
+}
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.search-container .input .suffix {
+    border-left: 1px solid #707070;
+    cursor: pointer;
+    padding-left: 18px;
+}
+
 </style>
-</head>
 <body>
-
-<button class="collapsible">តើដែនកម្រិតទី១ (ឬដែនកម្រិតខ្ពស់) (top level domain) ជាអ្វី?</button>
-<div class="content">
-    <p>ដែន​ក​ម្រិ​ត​ទី​១​ (​ឬ​ដែន​ក​ម្រិ​ត​ខ្ពស់​) (​top​ ​level​ ​domain​) ​សំដៅ​ដល់​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​។​
-
-        ឧទាហរណ៍​៖​ ​ដែន​ “.k​h​” ​និង​ “.​ខ្មែរ​ ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​ក្នុង​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ជាតិ​របស់​ព្រះរាជាណាចក្រកម្ពុជា​ ​ដែល​ត្រូវ​បាន​បង្ហាញ​ជា​អត្តសញ្ញាណ​ ​នៃ​ព្រះរាជាណាចក្រកម្ពុជា​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​។​</p>
-</div>
-
-<button class="collapsible">តើដែនកម្រិតទី១ទូទៅ (generic top level domain - gTLD) និងដែនកម្រិតទី១តាមកូដប្រទេស (country code top-level domain - ccTLD) ខុសគ្នាដូចមេ្តច?</button>
-<div class="content">
-    <p>ដែន​ក​ម្រិ​ត​ទី​១​ទូទៅ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​ ​ដែល​មានឈ្មោះ​ដូចជា​ .​co​m​, .​net​ ​និង​ .or​g​។​
-
-        ​ដែន​ក​ម្រិ​ត​ទី​១​ទូទៅ​មិន​ត្រូវ​បាន​កំណត់​ឬ​តំណាង​ឱ្យ​ប្រទេស​ណាមួយ​ទេ​ហើយ​ដែន​នេះ​ត្រូវ​បាន​គ្រប់គ្រង​ដោយ​សាជីវកម្ម​គ្រប់គ្រង​អាសយដ្ឋាន​ឈ្មោះ​និង​លេខ​អុី​ន​ធឺ​ណិ​ត​ (​Inter​net​ ​Corporation​ ​for​ ​Assign​e​d​ ​Name​s ​and​ ​Number​s - ​I​CAN​N). ​ដែន​ក​ម្រិ​ត​ទី​១​តាម​កូ​ដ​ប្រទេស​ (​country​ ​code​ ​top​-​level​ ​domain​ - cc​T​L​D​) ​គឺជា​ដែន​ក​ម្រិ​ត​ខ្ពស់​បំផុត​នៅ​ក្នុង​ឋានានុក្រម​នៃ​ឈ្មោះ​ដែន​ក្នុង​ប្រព័ន្ធ​អុី​ន​ធឺ​ណិ​ត​ដែល​ត្រូវ​បាន​រក្សាទុក​សម្រាប់​ប្រទេស​ ​តំបន់​ ​ឬ​ទីតាំង​ភូមិសាស្ត្រ​ណាមួយ​។​ ​ឧទាហរណ៍​៖​ k​h​ ​ជា​ដែន​ក​ម្រិ​ត​ទី​១​តាម​កូ​ដ​ប្រទេស​សម្រាប់​ព្រះរាជាណាចក្រកម្ពុជា​។</p>
-</div>
-
-<button class="collapsible">តើ​មាន​ប្រភេទ​ឈ្មោះ​ដែន​អ្វីខ្លះ​ដែល​អាច​ចុះឈ្មោះ​បាន​នៅ​ក្នុង​ព្រះរាជាណាចក្រកម្ពុជា​?</button>
-<div class="content">
-    <p>អ្នកអាចចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី១ និងដែនកម្រិតទី២។ ការចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី១ មានពីរទម្រង់៖</p>
-      <p class="li">
-        ១-«ឈ្មោះដែលស្នើសុំ».kh សម្រាប់បុគ្គលនៅក្នុងនិងក្រៅព្រះរាជាណាចក្រកម្ពុជា
-      </p>  
-      <p class="li">២-«ឈ្មោះដែលស្នើសុំ».ខ្មែរ</p>
-      <p class="p">សម្រាប់បុគ្គលនៅក្នុងនិងក្រៅព្រះរាជាណាចក្រកម្ពុជាការចុះឈ្មោះដែនជាតិក្រោមដែនកម្រិតទី២មានទម្រង់ដូចខាងក្រោម៖</p>
-      <p></p> 
-         
-        
-        
-        
-        ១-«ឈ្មោះដែលស្នើសុំ».com.kh ជាប្រភេទដែនសម្រាប់សហគ្រាសពាណិជ្ជកម្ម ឬសហគ្រាសសាធារណៈ
-        
-        ២-«ឈ្មោះដែលស្នើសុំ».org.kh ជាប្រភេទដែនសម្រាប់អង្គការ សមាគម និងសហជីព
-        
-        ៣-«ឈ្មោះដែលស្នើសុំ».edu.kh ជាប្រភេទដែនសម្រាប់គ្រឹះស្ថានសិក្សារដ្ឋ និងឯកជន
-        
-        ៤-«ឈ្មោះដែលស្នើសុំ».net.kh ជា​ប្រភេទ​ដែន​សម្រាប់​ក្រុមហ៊ុន​ឬ​ស្ថាប័ន​ផ្តល់​សេវា​បណ្តាញ​កុំព្យូទ័រ
-</div>
-
-<button class="collapsible">ហេតុអ្វីបានជា​ព័ត៌មាន​ដែល​ខ្ញុំ​បាន​បំពេញ​ត្រូវ​បាន​បង្ហាញ​ជា​សាធារណៈ​?</button>
-<div class="content">
-    <p>​នៅពេលដែល​អ្នក​ចុះឈ្មោះ​ប្រើប្រាស់​ឈ្មោះ​ដែន​អ្នក​បាន​ឯកភាព​ក្នុង​ការ​ផ្តល់​នូវ​ព័ត៌មាន​ដែល​អ្នក​បាន​បំពេញ​ក្នុង​ពេល​ស្នើសុំ​ចុះឈ្មោះ​ដែន​ដាក់​បង្ហាញ​ជា​សាធារណៈ​នៅ​មូល​ទិន្នន័យ​សម្រាប់​ដំណើរការ​វិធីការ​ព័ត៌​មានឈ្មោះ​ដែន​ជាតិ​ (​WHO​I​S ​D​at​abase​) ​ព័ត៌មាន​នេះ​ដាក់​តាំង​បង្ហាញ​ដើម្បី​អនុញ្ញាត​ឱ្យ​សាធារណជន​ដឹង​អំពី​ស្ថានភាព​នៃ​ឈ្មោះ​ដែន​របស់​អ្នក​ឬ​ទាក់ទង​ទៅ​អ្នក​ពាក់ព័ន្ធ​បញ្ហា​បច្ចេកទេស​ផ្សេងៗ​។</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-</body>
-</html> -->
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <h2>Accordion Example</h2>
-  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
+  <div class="container-1200">
+    <div class="home-search-domain-container">
+      <h1 class="home-title">បង្ហាញពី&គំនិតរបស់អ្នកនៅ&លើ
+        <br>អ៊ីនធឺណិតជាមួយដែនជាតិ
+        <span class="orange">.kh</span>
+      </h1>
+      <form class="search-container false">
+        <div class="input-container">
+          <div class="input">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass prefix icon-search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z">
+              </path>
+            </svg>
+            <input class="" type="text" placeholder="ស្វែងរកឈ្មោះដែនជាតិ" style="width: 150px;">
+            <span class="suffix">
+              <input type="hidden" name="type" value="1">.kh 
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                </path>
+              </svg>
+            </span>
+            <div class="domain-dropdown">
+              <!--<span>.kh</span>
+               <span>.com.kh</span>
+              <span>.net.kh</span>
+              <span>.org.kh</span>
+              <span>.edu.kh</span> -->
+            </div>
+          </div>
+          <span class="example">ឧទាហរណ៍ អ្នកអាចស្វែងរក “mycoffeeshop.kh”</span>
+        </div>
+        <button type="submit" class="button primary btnSubmit">ស្វែងរក</button>
+      </form>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-  </div> 
-</div>
-    
+    <picture class="home-title-bg">
+      <source srcset="/static/media/home-title-bg.72056ceaeae0446b112a.webp" type="image/webp">
+      <img src="/static/media/home-title-bg.fe14b71b61182226d7fe.png" alt="">
+    </picture>
+  </div>
 </body>
 </html>

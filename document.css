@@ -2,7 +2,7 @@
 
 *{
     font-family: "Kantumruy Pro", sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -19,27 +19,35 @@ html{
 }
 body{
     background-color:white;
-    height: 2000px;
+    height: 2500px;
 }
 header{
     width: 100%;
     background-color:#014282;
+    /* background-color: #ff7c00; */
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1000;
     transition: .2s;
     padding: 0 70px;
+}
+.dao{
+    max-width: 1500px;
+    width: 100%;
+    background-color: #014282;
+    display: flex;
+    justify-content: space-between;
 }
 header .navbar ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    
+    padding: 20px
 }
 header .navbar ul li{
     margin:0 1rem ;
@@ -57,6 +65,7 @@ header .navbar ul li a:hover{
 header .navbar ul li img{
     width: 40px;
     height: 30px;
+    margin-top: 5px;
 }
 header .navbar ul li a button{
     font-size: 1.5rem;
@@ -76,13 +85,13 @@ header .logo {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-header .fa-bars{
-    font-size: 3rem;
+/*header svg{
+     font-size: 3rem;
     color: rgb(242, 150, 165);
     cursor: pointer;
     display: none;
     transition: 2s;
-}
+} */
 header .logo img{
     width:100% ;
     height: 80px; 
@@ -92,16 +101,18 @@ header .logo img{
     position: relative;
     top: 86px;
     background-color:white;
+    max-width: 1500px;
     width: 100%;
     text-align: center;
-    height: 20vh;
+    /* height: 20vh; */
     padding: 40px;
+    margin: 0 auto;
     
 }
 .one .one1{
     background-color: #fff;
     width: 100%;
-    height:40px ;
+    /* height:40px ; */
 }
 .one b{
     color: #014282;
@@ -112,7 +123,7 @@ header .logo img{
 .one .one2{
     background-color: #fff;
     width: 100%;
-    height:60px ;
+    /* height:60px ; */
     display: flex;
     justify-content: center;
 }
@@ -122,28 +133,32 @@ header .logo img{
     background-color:  #fff;
 }
 .one  p{
-    color: #202020;
+    color: rgb(77, 77, 77);
     font-size: 15px;
     padding: 10px 110px;
+    line-height: 23.5px;
+    font-weight: 500;
     
 }
 
 .container{
+    max-width: 1500px;
     width: 100%;
-    height: 1600px;
+    height:  1600px;
     background-color: #fff;
+    /* background-color: #1890ff; */
     margin-top: 50px;
     /* position: relative; */
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
    
 }
 .container .container1{
     width: 75%;
-    height: 1000px;
+    /* height: 1000px; */
     background-color:  #fff;
     /* margin-top: 50px; */
     /* position: relative; */
+    margin: 0 auto;
    display: flex;
    justify-content: space-between;
 }
@@ -760,7 +775,7 @@ header .logo img{
 .container .container1 .right .box3 .box3-footer{
     background-color: rgb(35, 176, 230);
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
     border-bottom-left-radius:20px ;
     border-bottom-right-radius:20px ;
     text-align: center;
@@ -775,25 +790,31 @@ header .logo img{
 }
 .uu{
     width:100% ;
-    height: 20px;
+    /* height: 20px; */
     background-color:rgb(30, 30, 137) ;
 }
 .footer{
-    width: 100%;
-    height: 50vh;
+    max-width: 100%;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #ff7c00; */
     display: flex;
     justify-content: center;
 }
 .footer .footer-container{
+    max-width: 1000px;
     width: 75%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 .footer .footer-container .logo{
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #9d9d9d; */
     /* padding: 20px; */
 }
 .footer .footer-container .logo svg{
@@ -811,16 +832,19 @@ header .logo img{
     margin-top: 20px;
 }
 .footer .footer-container .flex-row{
+    max-width: 1000px;
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #f2f8fc; */
     display: flex;
     justify-content: space-between;
 }
 .footer .footer-container .flex-row .flex-row-left{
     width: 50%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-left i{
     font-size: 24px;
@@ -841,8 +865,9 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-center{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-center a{
     color: rgb(255, 255, 255);
@@ -854,10 +879,11 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-right{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
     position: relative;
-    left: 30px;
+    /* left: 30px; */
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-right a{
     color: rgb(255, 255, 255);
@@ -880,22 +906,24 @@ header .logo img{
     
 }
 .two{
-    width: 100%;
-    height: 9vh;
+    max-width: 100%;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
+    /* background-color: #1890ff; */
     display: flex;
     justify-content: center;
 }
 .two .two-one{
+    max-width: 1000px;
     width: 75%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
     display: flex;
     justify-content: space-between;
 }
 .two .two-one .qq{
     width: 65%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .qq p{
@@ -908,7 +936,7 @@ header .logo img{
 }
 .two .two-one .ww{
     width: 15%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ww p{
@@ -921,12 +949,12 @@ header .logo img{
 }
 .two .two-one .ee{
     width: 20%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ee img{
     width:200px ;
-    height:30px ;
+    /* height:30px ; */
     margin-top: 12px;
     position: relative;
     right: 20px;

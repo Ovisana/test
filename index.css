@@ -19,6 +19,7 @@ html{
     overflow-x: hidden;
 }
 body{
+    width: 100%;
     background-color:white;
     height: 2500px;
 }
@@ -30,17 +31,24 @@ header{
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1000;
     transition: .2s;
     padding: 0 70px;
+}
+.dao{
+    max-width: 1500px;
+    width: 100%;
+    background-color: #014282;
+    display: flex;
+    justify-content: space-between;
 }
 header .navbar ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    
+    padding: 20px
 }
 header .navbar ul li{
     margin:0 1rem ;
@@ -58,6 +66,7 @@ header .navbar ul li a:hover{
 header .navbar ul li img{
     width: 40px;
     height: 30px;
+    margin-top: 5px;
 }
 header .navbar ul li a button{
     font-size: 1.5rem;
@@ -176,21 +185,30 @@ header .logo img{
     top: 80px;
     background-color: #014282;
     max-width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
+
+}
+.about .roww{
+    max-width: 1200px;
+    width: 75%;
+    /* height: 60vh; */
+    /* background-color:royalblue; */
+    margin: 0 auto;
 }
 .about .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .about .row .image img{
-    height: 50vh;
-    width: 30vw;
+    position: relative;
+    left: 50px;
 }
 .about .row .content{
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
     position: relative;
     top: -20px;
+    /* background-color: #1890ff; */
 } 
 .about .row .content p b{
     font-size: 25px;
@@ -200,6 +218,7 @@ header .logo img{
 } 
 .about .row .content p{
     font-size: 25px;
+    font-weight: 500;
     color: white;
 } 
 .about .row .content p1{
@@ -211,17 +230,16 @@ header .logo img{
 .about .row .content form{
     display: flex;
     justify-content: space-between;
-    
+    /* background-color: #1890ff; */
 } 
 .about .row .content form input{
-    width: 350px;
+    width: 255px;
     height:45px ;
     border: none;
     left: 20px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     font-weight: 500;
     font-size: 20px;
+    /* background-color: rebeccapurple; */
 }
 .about .row .content form i{
     padding: 10px;
@@ -238,16 +256,27 @@ header .logo img{
 .about .row .content form p {
     color:#343a40;
     position: relative;
-    right: 90px;
+    /* right: 90px; */
     padding: 4px;
+    width: 80px;
+    height:45px ;
+    background-color: #fff;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .about .row .content form p span{
     font-size: 2rem;
     font-weight: 500;
+    border-left: 1px solid gray;
+    position: relative;
+    left: 10px;
+    padding: 0px 8px;
 }
 .about .row .content form p span i{
     position: relative;
-    right: 10px;
+    left: 25px;
+    top: -30px;
     background: none;
     font-size: 1.5rem;
 }
@@ -261,7 +290,7 @@ header .logo img{
     width: 100px;
     height: 45px;
     position: relative;
-    right: 75px;
+    left: 20px;
     font-size: 1.7rem;
 } 
 .about .row .content button:hover{
@@ -699,9 +728,9 @@ header .logo img{
     html{
         font-size:55% ;
     }
-    header .logo{
+    /* header .logo{
         
-    }
+    } */
     header{
         height:52px;
         padding: 0 0px;
@@ -756,22 +785,22 @@ header .logo img{
     }
     .about{
         width:100% ;
-        height: 100vh;
+        height: 50vh;
     }
     .about .row .content p{
         font-size: 3rem; 
         position: relative;
-        left: 20px;
+        left: 70px;
     }
     .about .row .content p1{
         font-size: 1.5rem;
         position: relative;
-        left: 20px;
+        left: 70px;
     }
     .about .row .content form{
         position: relative;
-        left: 20px;
-        width: 80%;
+        left: 70px;
+        width: 70%;
     }
     .about1 .row1 b{
        font-size: 1.5rem;
@@ -811,4 +840,37 @@ header .logo img{
      .pi{
         padding-top: 7px;
      }
+     .image{
+        display: none;
+     }
+     .row{
+        position: relative;
+        top: 100px;
+     }
+     /* .about .row .content form p span{
+        position: relative;
+        right: 290px;
+    } */
+    .about .row .content form p {
+        position: relative;
+        right: 100px;
+        /* background-color: #1890ff; */
+    }
+    .teacher .card-container{
+        display: block;
+        
+    }
+    .teacher .card-container .card {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        right: 65px;
+    }
+    .home-how-to-buy .container{
+        display: block;
+    }
+    .home-how-to-buy .container .pic{
+        width: 500px;
 }
+

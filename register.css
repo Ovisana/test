@@ -2,7 +2,7 @@
 
 *{
     font-family: "Kantumruy Pro", sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -19,7 +19,7 @@ html{
 }
 body{
     background-color:white;
-    height: 00px;
+    height: 2500px;
 }
 header{
     width: 100%;
@@ -29,17 +29,24 @@ header{
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1000;
     transition: .2s;
     padding: 0 70px;
+}
+.dao{
+    max-width: 1500px;
+    width: 100%;
+    background-color: #014282;
+    display: flex;
+    justify-content: space-between;
 }
 header .navbar ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    
+    padding: 20px
 }
 header .navbar ul li{
     margin:0 1rem ;
@@ -57,6 +64,7 @@ header .navbar ul li a:hover{
 header .navbar ul li img{
     width: 40px;
     height: 30px;
+    margin-top: 5px;
 }
 header .navbar ul li a button{
     font-size: 1.5rem;
@@ -76,16 +84,17 @@ header .logo {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-header .fa-bars{
-    font-size: 3rem;
+/*header svg{
+     font-size: 3rem;
     color: rgb(242, 150, 165);
     cursor: pointer;
     display: none;
     transition: 2s;
-}
+} */
 header .logo img{
     width:100% ;
     height: 80px; 
+    
 }
 .how-to-register{
     width: 100%;
@@ -131,18 +140,22 @@ header .logo img{
     color: #014282;
 }
 .row1{
-    width:100% ;
-    height: 170px;
-    background-color: #fff;
+    max-width:100% ;
+    /* height: 170px; */
+    background-color: none;
     position: relative;
     left: 160px;
+    /* top: 10px; */
+
 } 
 .row1 .row1-one{
+    max-width: 1200px;
     width:70% ;
     height: 190px;
-    background-color: none;
+    background-color:  none;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .row1 .box1{
     width: 170px;
@@ -151,7 +164,7 @@ header .logo img{
     margin: 0 auto;
     border-radius: 10px;
     /* box-shadow: 0 0 40px rgba(0,0,0,.16); */
-    box-shadow: 0 0 40px rgba(0,0,0,.16);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     margin-top: 30px;
     
 }
@@ -165,7 +178,7 @@ header .logo img{
 .row1 .box1 .pic{
     width: 100%;
     height: 70px;
-    background-color: #fff;
+    background-color:none;
     padding: 7px;
     display: flex;
     justify-content: center;
@@ -187,11 +200,13 @@ header .logo img{
 .step-circle{
     
     /* display: flex; */
-    
-    
-    width: 100%;
+    /* margin-top: 10px; */
+    /* background-color: #1890ff; */
+    max-width: 1200px;
+    width: 75%;
     height: 40px;
     background-color:none;
+    margin: 0 auto;
 }
 .step-circle-one{
     width: 65%;
@@ -203,7 +218,7 @@ header .logo img{
     position: absolute;
     font-size: 15px;
     position: relative;
-    left: 260px;
+    left: 250px;
 }
 .step-circle .step-circle-one span{
     align-items: center;
@@ -222,30 +237,36 @@ header .logo img{
     width: 125px;
 }
 .row2{
-    width:100% ;
-    height: 170px;
+    /* position: relative;
+    top: -10px; */
+    max-width:100% ;
+    height: 160px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
 } 
 .row2-one{
+    max-width: 1200px;
     width:70% ;
-    height: 170px;
-    background-color: #fff;
+    /* height: 170px; */
+    /* background-color: #fff; */
+    background-color: #1890ff   ;
     display: flex;
     justify-content: space-between;
     position: relative;
-    left: 250px;
+    left: 270px;
+    margin: 0 auto;
 }
 .row2 .box2{
     width: 170px;
-    height: 100px;
+    /* height: 100px; */
     background-color: #fff;
     margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0,0,0,.16);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     margin-top: 30px;
-    
+    position: relative;
+    top: -10px;
 }
 .row2 .box2 .box2-header{
     width: 100%;

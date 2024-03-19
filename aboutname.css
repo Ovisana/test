@@ -2,7 +2,7 @@
 
 *{
     font-family: "Kantumruy Pro", sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -19,7 +19,7 @@ html{
 }
 body{
     background-color:white;
-    height: 2000px;
+    height: 2500px;
 }
 header{
     width: 100%;
@@ -29,17 +29,24 @@ header{
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1000;
     transition: .2s;
     padding: 0 70px;
+}
+.dao{
+    max-width: 1500px;
+    width: 100%;
+    background-color: #014282;
+    display: flex;
+    justify-content: space-between;
 }
 header .navbar ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    
+    padding: 20px
 }
 header .navbar ul li{
     margin:0 1rem ;
@@ -57,6 +64,7 @@ header .navbar ul li a:hover{
 header .navbar ul li img{
     width: 40px;
     height: 30px;
+    margin-top: 5px;
 }
 header .navbar ul li a button{
     font-size: 1.5rem;
@@ -76,13 +84,13 @@ header .logo {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-header .fa-bars{
-    font-size: 3rem;
+/*header svg{
+     font-size: 3rem;
     color: rgb(242, 150, 165);
     cursor: pointer;
     display: none;
     transition: 2s;
-}
+} */
 header .logo img{
     width:100% ;
     height: 80px; 
@@ -90,7 +98,7 @@ header .logo img{
 }
 .about-title{
     background: #014282;
-    width: 100%;
+    max-width: 100%;
     height: 270px;
     position: relative;
     top: 85px;
@@ -99,6 +107,7 @@ header .logo img{
 }
 .about-title .container{
     background-image: url("https://domain.gov.kh/static/media/about-bg.a738281f4cb10599ef97.png");
+    max-width: 1900px;
     width:100%;
     height: 270px;
     background-size: 100% 100%;
@@ -141,22 +150,23 @@ header .logo img{
     width: 308px;
 }
 .box{
-    width: 100%;
-    height: 70vh;
+    max-width: 100%;
+    /* height: 70vh; */
     background-color:#fafafa;
     display: flex;
     justify-content: center;
 }
 .box .box1{
+    max-width: 1200px;
     width: 75%;
-    height: 70vh;
+    /* height: 70vh; */
     background-color:#fafafa;
     display: flex;
     justify-content: space-between;
 }
 .box .box1 .box-left{
     width: 48%;
-    height: 40vh;
+    /* height: 40vh; */
     background-color: #fff;
     border-radius: 20px;
    position: relative;
@@ -179,7 +189,7 @@ header .logo img{
 }
 .box .box1 .box-right{
     width: 48%;
-    height: 40vh;
+    /* height: 40vh; */
     background-color: #fff;
     border-radius: 20px;
     position: relative;
@@ -212,24 +222,29 @@ header .logo img{
 }
 .box2{
     width:100% ;
-    height: 60vh;
+    /* height: 60vh; */
     background-color: #fafafa;
     display: flex;
     justify-content: center;
 }
 .box2 .box2-one{
+    max-width: 1200px;
     width:75% ;
-    height: 55vh;
+    /* height: 55vh; */
     background-color: #fff;
+    /* background-color: #1890ff; */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px 0px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+top: 200px;
 }
 .box2 .box2-one .left{
     width: 25%;
-    height: 55vh ;
+    /* height: 55vh ; */
     background-color: #fff;
+    /* background-color: #1890ff; */
     border-top-left-radius:20px ;
     border-bottom-left-radius:20px ;
     flex: 0 0 auto;
@@ -237,6 +252,7 @@ header .logo img{
   display: flex;
   justify-content: flex-start;
   padding: 0px 20px;
+
 }
 .box2 .box2-one .left h2{
     color: rgb(51, 51, 51);
@@ -265,13 +281,16 @@ header .logo img{
     width: 100%;
 }  
  .ender{
-    width: 100%;
-    height: 160vh;
+   max-width: 100%;
+    /* height: 160vh; */
     background-color: rgb(242, 248, 252);
+    position: relative;
+    top: 250px;
 }
 .ender .oo{
+    max-width: 1200px;
     width: 75%;
-    height: 35vh;
+    /* height: 35vh; */
     background-color:rgb(242, 248, 252);
     margin: 0 auto;
 }
@@ -294,8 +313,9 @@ header .logo img{
 }
 
 .ender .aa{
+    max-width: 1200px;
     width: 75%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color:rgb(242, 248, 252);
     margin: 0 auto;
     display: flex;
@@ -306,7 +326,7 @@ header .logo img{
 .ender .aa .bb{
     margin-top: 10px;
     width: 48.5%;
-    height:35vh ;
+    /* height:35vh ; */
     background-color: #8d6c4d;
     border-radius: 20px;
     display: flex;
@@ -314,7 +334,7 @@ header .logo img{
 }
 .ender .aa .bb-left {
     width: 45%;
-    height: 100%;
+    /* height: 100%; */
 }
 .ender .aa .bb-left img {
     width: 100%;
@@ -322,7 +342,7 @@ header .logo img{
 }
 .ender .aa .bb-right{
     width: 60%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #fff;
     border-top-right-radius:20px ;
     border-bottom-right-radius:20px ;
@@ -349,7 +369,7 @@ header .logo img{
     border-radius: 10px;
     width:120px ;
     height: 36px;
-   
+    margin: 10px;
     position: relative;
     left: 20px;
     cursor: pointer;
@@ -363,19 +383,20 @@ header .logo img{
     background-color: #014282;
 }
 .ender .cc{
+    max-width: 1200px;
     width: 75%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color:rgb(242, 248, 252);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -80px;
+    top:10px;
 }
 .ender .cc .bb{
     margin-top: 10px;
     width: 48.5%;
-    height:35vh ;
+    /* height:35vh ; */
     background-color: #8d6c4d;
     border-radius: 20px;
     display: flex;
@@ -418,7 +439,7 @@ header .logo img{
     border-radius: 10px;
     width:120px ;
     height: 36px;
-   
+    margin: 10px;
     position: relative;
     left: 20px;
     cursor: pointer;
@@ -432,19 +453,20 @@ header .logo img{
     background-color: #014282;
 }
 .ender .dd{
+    max-width: 1200px;
     width: 75%;
-    height: 40vh;
+    /* height: 40vh; */
     background-color:rgb(242, 248, 252);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -140px;
+    top: 40px;
 }
 .ender .dd .bb{
     margin-top: 10px;
     width: 48.5%;
-    height:35vh ;
+    /* height:35vh ; */
     background-color: #8d6c4d;
     border-radius: 20px;
     display: flex;
@@ -452,7 +474,7 @@ header .logo img{
 }
 .ender .dd .bb-left {
     width: 45%;
-    height: 100%;
+    /* height: 100%; */
 }
 .ender .dd .bb-left img {
     width: 100%;
@@ -460,7 +482,7 @@ header .logo img{
 }
 .ender .dd .bb-right{
     width: 60%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #fff;
     border-top-right-radius:20px ;
     border-bottom-right-radius:20px ;
@@ -487,7 +509,7 @@ header .logo img{
     border-radius: 10px;
     width:120px ;
     height: 36px;
-   
+    margin: 10px;
     position: relative;
     left: 20px;
     cursor: pointer;
@@ -500,27 +522,41 @@ header .logo img{
 .ender .dd .bb-right button:hover {
     background-color: #014282;
 }
+/* .ii{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(242, 248, 252);
+    background-color: #ff7c00;
+} */
 .pp{
     width: 100%;
     height: 10vh;
     background-color: #fff;
 }
 .footer{
-    width: 100%;
-    height: 50vh;
+    max-width: 100%;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #ff7c00; */
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 300px;
 }
 .footer .footer-container{
+    max-width: 1000px;
     width: 75%;
-    height: 50vh;
+    /* height: 50vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 .footer .footer-container .logo{
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #9d9d9d; */
     /* padding: 20px; */
 }
 .footer .footer-container .logo svg{
@@ -538,16 +574,19 @@ header .logo img{
     margin-top: 20px;
 }
 .footer .footer-container .flex-row{
+    max-width: 1000px;
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    /* background-color: #f2f8fc; */
     display: flex;
     justify-content: space-between;
 }
 .footer .footer-container .flex-row .flex-row-left{
     width: 50%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-left i{
     font-size: 24px;
@@ -568,8 +607,9 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-center{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-center a{
     color: rgb(255, 255, 255);
@@ -581,10 +621,11 @@ header .logo img{
 }
 .footer .footer-container .flex-row .flex-row-right{
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     background-color:rgb(1, 66, 130);
     position: relative;
-    left: 30px;
+    /* left: 30px; */
+    margin-bottom: 40px;
 }
 .footer .footer-container .flex-row .flex-row-right a{
     color: rgb(255, 255, 255);
@@ -607,22 +648,26 @@ header .logo img{
     
 }
 .two{
-    width: 100%;
-    height: 9vh;
+    max-width: 100%;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
+    /* background-color: #1890ff; */
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 300px;
 }
 .two .two-one{
+    max-width: 1000px;
     width: 75%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
     display: flex;
     justify-content: space-between;
 }
 .two .two-one .qq{
     width: 65%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .qq p{
@@ -635,7 +680,7 @@ header .logo img{
 }
 .two .two-one .ww{
     width: 15%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ww p{
@@ -648,12 +693,12 @@ header .logo img{
 }
 .two .two-one .ee{
     width: 20%;
-    height: 9vh;
+    /* height: 9vh; */
     background-color:rgb(1, 45, 88);
 }
 .two .two-one .ee img{
     width:200px ;
-    height:30px ;
+    /* height:30px ; */
     margin-top: 12px;
     position: relative;
     right: 20px;
