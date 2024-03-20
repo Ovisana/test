@@ -5,7 +5,7 @@
     font-family: "Kantumruy Pro", sans-serif;
     /* text-transform: capitalize; */
     text-decoration: none;
-    outline: none;
+    /* outline: none; */
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -180,16 +180,24 @@ header .logo img{
 .top a svg{
     color: white;
 }
+.iuo{
+    width: 100%;
+    background-color:red;
+    height: 100px;
+}
 .about{
     position: relative;
-    top: 80px;
+    top: 58px;
     background-color: #014282;
-    max-width: 100%;
-    /* height: 60vh; */
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+
 
 }
 .about .roww{
-    max-width: 1200px;
+    max-width: 1500px;
     width: 75%;
     /* height: 60vh; */
     /* background-color:royalblue; */
@@ -230,7 +238,6 @@ header .logo img{
 .about .row .content form{
     display: flex;
     justify-content: space-between;
-    /* background-color: #1890ff; */
 } 
 .about .row .content form input{
     width: 255px;
@@ -239,7 +246,6 @@ header .logo img{
     left: 20px;
     font-weight: 500;
     font-size: 20px;
-    /* background-color: rebeccapurple; */
 }
 .about .row .content form i{
     padding: 10px;
@@ -725,12 +731,15 @@ header .logo img{
     right: 20px;
 }
 @media(max-width:768px){
-    html{
+    /* html{
         font-size:55% ;
-    }
-    /* header .logo{
-        
     } */
+    
+body{
+    width: 700px;
+    background-color:white;
+    height: 2500px;
+}
     header{
         height:52px;
         padding: 0 0px;
@@ -785,25 +794,77 @@ header .logo img{
     }
     .about{
         width:100% ;
-        height: 50vh;
+        /* height: 50vh; */
     }
     .about .row .content p{
         font-size: 3rem; 
         position: relative;
-        left: 70px;
+        right: 60px;
+        font-size: 45px;
+    }
+    .about .row .content p b{
+        font-size: 45px;
     }
     .about .row .content p1{
         font-size: 1.5rem;
         position: relative;
-        left: 70px;
+        right: 90px;
     }
     .about .row .content form{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .about .row .content form input{
+        width: 255px;
+        height:100px ;
+        border: none;   
+        font-weight: 500;
+        font-size: 20px;
         position: relative;
-        left: 70px;
-        width: 70%;
+        right: 100px;
+    }
+    .about .row .content form i{
+        padding: 25px;
+        background:white;
+        color: #645b5d;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-size: 5rem;
+        right: 60px;
+    }
+    .about .row .content form p {
+        color:#343a40;
+        position: relative;
+        /* right: 90px; */
+        padding: 4px;
+        width: 80px;
+        height:45px ;
+        background-color: #fff;
+        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .about .row .content form p span{
+        font-size: 2rem;
+        font-weight: 500;
+        border-left: 1px solid gray;
+        position: relative;
+        left: 10px;
+        padding: 0px 8px;
+    }
+    .about .row .content form p span i{
+        position: relative;
+        left: 25px;
+        top: -30px;
+        background: none;
+        font-size: 1.5rem;
     }
     .about1 .row1 b{
-       font-size: 1.5rem;
+       font-size: 45px;
     }
     .about1 .row1 p{
         font-size: 1rem;
@@ -856,21 +917,309 @@ header .logo img{
         right: 100px;
         /* background-color: #1890ff; */
     }
-    .teacher .card-container{
-        display: block;
+    
+    
+    .footer .footer-container .logo{
+        width: 100%;
+        /* height: 25vh; */
+        background-color:rgb(1, 66, 130);
+        /* background-color: #9d9d9d; */
+        /* padding: 20px; */
+    }
+    .footer .footer-container .logo svg{
+        width: 150px;
+        height: 150px;
+        position:relative;
+        /* margin-top: -300px; */
+        top: -4px;
+    }
+    .footer .footer-container .logo img{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        left: 20px;
+        margin-top: 20px;
+    }
+    .footer .footer-container .flex-row{
+        display: inline-block;
+    }
+    .footer .footer-container .flex-row .flex-row-right{
+        width: 100%;
+        background-color:rgb(1, 66, 130);
+        margin-bottom: 40px;
+    }
+    .footer .footer-container .flex-row .flex-row-center{
+        width: 100%;
+        background-color:rgb(1, 66, 130);
+        margin-bottom: 40px;
+    }
+    .footer .footer-container .flex-row .flex-row-left{
+        width: 100%;
+        background-color:rgb(1, 66, 130);
+        margin-bottom: 40px;
+    }
+    .footer .footer-container .flex-row .flex-row-left i{
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 5px;
+    }
+    .footer .footer-container .flex-row .flex-row-left a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        left: 10px;
+    }
+    .footer .footer-container .flex-row .flex-row-center a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .footer .footer-container .flex-row .flex-row-right a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .footer .footer-container .flex-row .flex-row-right i{
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 500;
+        padding: 0 7px;
+        transition: 0.5s;
+        position: relative;
+        right: 10px;
         
     }
-    .teacher .card-container .card {
-        width: 400px;
-        margin: 0 auto;
-        margin-top: 20px;
-        position: relative;
-        right: 65px;
+    .two{
+        width: 100%;
+        background-color:rgb(1, 45, 88);
+
     }
-    .home-how-to-buy .container{
+    .two .two-one{
+        width: 100%;
         display: block;
     }
-    .home-how-to-buy .container .pic{
-        width: 500px;
+    .two .two-one .qq{
+        width: 75%;
+        background-color:rgb(1, 45, 88);
+        position: relative;
+        left: 80px;
+        margin: 0 auto;
+        
+    }
+    .two .two-one .qq p{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        padding: 19px;
+        font-weight: 500;
+        position: relative;
+        right: 20px;
+        padding: 0px 50px;
+        padding:  10px;
+    }
+    .two .two-one .ww{
+        width: 200px;
+        background-color:rgb(1, 45, 88);
+        margin: 0 auto;
+    }
+    .two .two-one .ww p{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        padding: 19px;
+        font-weight: 500;
+        position: relative;
+        left: 60px;
+    }
+    .two .two-one .ee{
+        width: 100%;
+        background-color:rgb(1, 45, 88);
+        display: flex;
+        justify-content: center;
+    }
+    .two .two-one .ee img{
+        width:500px ;
+        height:50px ;
+        margin-top: 12px;
+        position: relative;
+        
+        margin-bottom: 10px;
+    }
+    .container1{
+        padding: 30px;
+        margin-bottom: 20px;
+        width:99.50%;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+    }
+    .container1 .container2{
+        width: 955px;
+        background-color:#fafafa;
+        position: relative;
+        left: 15px;
+    
+    }
+    .container1 .container2 .first{
+        text-align: center;
+        width: 100%;
+        height: 12%;
+        padding: 10px;
+        color: #014282;
+        
+    }
+    .container1 .container2 .first h2{
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .one{
+        width: 100%;
+        height:50px ;
+        display: flex;
+        justify-content: space-between;
+    }
+   .container1 .container2 .accordion header1 span{
+    font-size: 30px;
+    padding: 20px 0px;
+   }
+   .container1 .container2 .accordion p{
+    padding: 0px 15px;
+    border-left: 3px solid #1c4076;
+    font-weight:500 ;
+    height: 0;
+    font-size: 30px;
+    color:#4f4f4f ;
+    transition: all 0.2s linear;
+    line-height: 35.5px;
+   }
+   .container1 .container2 .accordion .accordion_content{
+        border-bottom: 4.5px solid #9d9d9d;
+   }
+   .home-how-to-buy{
+    background: #f2f8fc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
+.home-how-to-buy .container{
+    align-items: center;
+    display: block;
+    padding: 0px 16px;
+}
+/* .home-how-to-buy .container .pic{
+    width: auto;
+    border-style: none;
+    position: relative;
+   
+} */
+.home-how-to-buy .container .pic img{
+    /* width: 1000px; */
+    height: 471px;
+    background: none;
+    position: relative;
+    top: 20px;
+}
+.home-how-to-buy .container .document{
+    width: 640px;
+    height: auto;
+    padding: 24px;
+    align-items: stretch;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50px;
+    position: relative;
+    right: 125px;
+}
+.home-how-to-buy .container .document .in h2{
+    color: #014282;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.home-how-to-buy .container .document .in ol li{
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-start;
+    margin-bottom: 7px;
+    word-break: break-word;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+    padding: 10px;
+}
+.home-how-to-buy .container .document .in ol li span {
+    align-items: center;
+    background: #014282;
+    border-radius: 140%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.home-how-to-buy .container .document .in a{
+    color: #ff7c00;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    transition: color .3s;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+    font-weight: 500;
+}.home-how-to-buy .container .document .in a:hover{
+    color: #1c4076;
+}
+.teacher{
+    background: white;
+    position: relative;
+    top: 20px;
+}
+.teacher .card-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    background-color: #fff;
+    padding: 0 120px;
+}
+.teacher .card-container .card{
+    padding:2rem ;
+    margin: 1.3rem;
+    background:white ;
+    text-align: center;
+    /* width: 2000px; */
+    height: 300px;
+    box-shadow: 0 0 2px 2px rgba(177, 176, 176, 0.16);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.teacher .card-container .card hr{
+   display: none;
+}
+.teacher .card-container .card img{
+    height: auto;
+    width:auto;
+}
+.teacher .card-container .card b{
+    color:#333;
+    font-size: 2rem;
+}
+.teacher .card-container .card span{
+    color: #014282;
+}
+.teacher .card-container .card p{
+    color:#333;
+    font-size: 16px;
+    font-weight: 500;
+    max-height: 50px;
+}
+.teacher .card-container .card .icons a{
+    color:#C63BFA;
+    font-size: 1.9rem;
+    padding:1.5rem .5rem;
+}
+}
